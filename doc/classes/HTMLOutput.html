@@ -1,0 +1,757 @@
+
+<html><head>
+  <title>Module: HTMLOutput</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <link rel="stylesheet" href=".././rdoc-style.css" type="text/css" media="screen" />
+  <script type="text/javascript" language="JavaScript">
+  <!--
+  function popCode(url) {
+    parent.frames.source.location = url
+  }
+  //-->
+  </script>
+</head>
+<body bgcolor="white">
+
+
+<table width="100%" border="0" cellspacing="0">
+ <tr class="title-row">
+ <td class="big-title-font">
+   <font size="-3"><b>Module</b><br /></font>HTMLOutput
+ </td>
+ <td align="right">
+   <table cellspacing="0" cellpadding="2">
+     <tr valign="top">
+      <td class="small-title-font">In:</td>
+      <td class="small-title-font">
+<a href="../files/lib/html_output_rb.html">lib/html_output.rb</a>
+      </td>
+     </tr>
+   </table>
+  </td>
+  </tr>
+</table><br />
+  <!-- banner header -->
+
+
+<div class="indent">
+<div class="description">
+<h1>HTML Output</h1>
+<table>
+<tr><td valign="top">Author:</td><td>Joel Parker Henderson, joelparkerhenderson@gmail.com
+
+</td></tr>
+<tr><td valign="top">Copyright:</td><td>Copyright (c) 2006-2008 Joel Parker Henderson
+
+</td></tr>
+<tr><td valign="top">License:</td><td>CreativeCommons License, Non-commercial Share Alike
+
+</td></tr>
+<tr><td valign="top">License:</td><td>LGPL, GNU Lesser General Public License
+
+</td></tr>
+</table>
+
+</div>
+</div>
+
+
+
+<div class="indent">
+<div class="methods">
+<table class="tablemethods" cellpadding="5" width="100%">
+<tr><td class="tablesubtitle">Methods</td></tr>
+</table>
+<div class="name-list">
+<ul>
+<li><a href="#M000032">attrs_to_string</a>
+<li><a href="#M000030">li</a>
+<li><a href="#M000031">lis</a>
+<li><a href="#M000017">table</a>
+<li><a href="#M000018">tables</a>
+<li><a href="#M000022">tbody</a>
+<li><a href="#M000025">td</a>
+<li><a href="#M000026">tds</a>
+<li><a href="#M000027">tfoot</a>
+<li><a href="#M000020">th</a>
+<li><a href="#M000019">thead</a>
+<li><a href="#M000021">ths</a>
+<li><a href="#M000023">tr</a>
+<li><a href="#M000024">trs</a>
+<li><a href="#M000028">ul</a>
+<li><a href="#M000029">uls</a>
+</ul>
+</div>
+</div>
+</div>
+
+
+    <div class="indent">
+    <div id="section">
+
+
+
+  
+
+<!--IF:method_list-->
+<div class="method_list">
+<!--START:method_list-->
+<!--IF:methods -->
+<h2>Public Instance methods</h2>
+<div class="methods">
+<!--START:methods-->
+<h2 class="methodname"><a name="M000030">
+
+ <b>li</b>(item)
+</a>
+</h2>
+
+<!--IF:m_desc-->
+<div class="description">
+<p>
+Return:
+</p>
+<pre>
+  &lt;li&gt;item&lt;/li&gt;
+</pre>
+</div><!--description-->
+<!--ENDIF:m_desc-->
+<!--IF:sourcecode -->
+<div class="sourcecode">
+<h2>Source Code</h2>
+<pre>
+     <span class="ruby-comment cmt"># File lib/html_output.rb, line 264</span>
+264:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">li</span>(<span class="ruby-identifier">item</span>)
+265:     <span class="ruby-value str">&quot;&lt;li&gt;&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">item</span>.<span class="ruby-identifier">to_s</span> <span class="ruby-operator">+</span> <span class="ruby-value str">&quot;&lt;/li&gt;\n&quot;</span>
+266:   <span class="ruby-keyword kw">end</span>
+</pre>
+</div><!--sourcecode-->
+<!-- ENDIF:sourcecode-->
+<!-- END methods -->
+<!--START:methods-->
+<h2 class="methodname"><a name="M000031">
+
+ <b>lis</b>(items)
+</a>
+</h2>
+
+<!--IF:m_desc-->
+<div class="description">
+<p>
+Return:
+</p>
+<pre>
+  &lt;li&gt;item[0]&lt;/li&gt;
+  &lt;li&gt;item[1]&lt;/li&gt;
+  &lt;li&gt;item[2]&lt;/li&gt;
+</pre>
+</div><!--description-->
+<!--ENDIF:m_desc-->
+<!--IF:sourcecode -->
+<div class="sourcecode">
+<h2>Source Code</h2>
+<pre>
+     <span class="ruby-comment cmt"># File lib/html_output.rb, line 274</span>
+274:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">lis</span>(<span class="ruby-identifier">items</span>)
+275:     <span class="ruby-identifier">items</span>.<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">x</span><span class="ruby-operator">|</span> <span class="ruby-identifier">li</span>(<span class="ruby-identifier">x</span>)}.<span class="ruby-identifier">join</span>
+276:   <span class="ruby-keyword kw">end</span>
+</pre>
+</div><!--sourcecode-->
+<!-- ENDIF:sourcecode-->
+<!-- END methods -->
+<!--START:methods-->
+<h2 class="methodname"><a name="M000017">
+
+ <b>table</b>(ops={})
+</a>
+</h2>
+
+<!--IF:m_desc-->
+<div class="description">
+<p>
+Options:
+</p>
+<pre>
+  :text : the complete text of the table, e.g. &lt;table&gt;text&lt;/table&gt;
+  :headers
+  :footers
+  :rows
+  :class is the table's css class, e.g. :class=&gt;'sortable'
+  :id is the table's css id, e.g. :id=&gt;'mytable'
+</pre>
+<h2>Example</h2>
+<pre>
+  headers = ['a','b','c']
+  footers = ['x','y','z']
+  rows=[['d','e,'f'],['g','h,'i'],['j','k','l']
+  table(:id=&gt;'foo', :class=&gt;'bar', :headers=&gt;headers, :footers=&gt;footers, :rows=&gt;rows
+</pre>
+<h2>Return HTML</h2>
+<pre>
+  &lt;table id=&quot;foo&quot; class=&quot;bar&quot;&gt;
+  &lt;thead&gt;
+  &lt;tr&gt;
+  &lt;th&gt;a&lt;/th&gt;
+  &lt;th&gt;b&lt;/th&gt;
+  &lt;th&gt;c&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;tr&gt;
+  &lt;td&gt;d&lt;/td&gt;
+  &lt;td&gt;e&lt;/td&gt;
+  &lt;td&gt;f&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+  &lt;td&gt;g&lt;/td&gt;
+  &lt;td&gt;h&lt;/td&gt;
+  &lt;td&gt;i&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+  &lt;td&gt;j&lt;/td&gt;
+  &lt;td&gt;k&lt;/td&gt;
+  &lt;td&gt;l&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tfoot&gt;
+  &lt;tr&gt;
+  &lt;th&gt;
+  &lt;th&gt;x&lt;/th&gt;
+  &lt;th&gt;y&lt;/th&gt;
+  &lt;th&gt;z&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;/tfoot&gt;
+  &lt;/table&gt;
+</pre>
+<h2>Special cases</h2>
+<p>
+If headers or row or footers are nil, then this skips them.
+</p>
+<p>
+If footers==[] then this method will use a footers array with blanks that
+is the same length as the headers array.
+</p>
+</div><!--description-->
+<!--ENDIF:m_desc-->
+<!--IF:sourcecode -->
+<div class="sourcecode">
+<h2>Source Code</h2>
+<pre>
+    <span class="ruby-comment cmt"># File lib/html_output.rb, line 69</span>
+69:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">table</span>(<span class="ruby-identifier">ops</span>={})
+70:     <span class="ruby-identifier">text</span>=<span class="ruby-identifier">ops</span>[<span class="ruby-identifier">:text</span>]
+71:     <span class="ruby-keyword kw">if</span> <span class="ruby-operator">!</span><span class="ruby-identifier">text</span>
+72:      <span class="ruby-identifier">headers</span>=<span class="ruby-identifier">ops</span>[<span class="ruby-identifier">:headers</span>]
+73:      <span class="ruby-identifier">footers</span>=(<span class="ruby-keyword kw">defined?</span>(<span class="ruby-identifier">ops</span>[<span class="ruby-identifier">:footers</span>]) <span class="ruby-operator">?</span> ((<span class="ruby-identifier">ops</span>[<span class="ruby-identifier">:footers</span>]<span class="ruby-operator">==</span><span class="ruby-keyword kw">true</span>) <span class="ruby-operator">?</span> <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">headers</span>.<span class="ruby-identifier">size</span>,<span class="ruby-value str">''</span>) <span class="ruby-operator">:</span> <span class="ruby-identifier">ops</span>[<span class="ruby-identifier">:footers</span>]) <span class="ruby-operator">:</span> <span class="ruby-keyword kw">false</span>)
+74:      <span class="ruby-identifier">rows</span>=<span class="ruby-identifier">ops</span>[<span class="ruby-identifier">:rows</span>]
+75:      <span class="ruby-identifier">text</span>=((<span class="ruby-identifier">headers</span> <span class="ruby-value">? </span><span class="ruby-identifier">thead</span>(<span class="ruby-identifier">headers</span>) <span class="ruby-operator">:</span> <span class="ruby-value str">''</span>) <span class="ruby-operator">+</span> (<span class="ruby-identifier">rows</span> <span class="ruby-value">? </span><span class="ruby-identifier">tbody</span>(<span class="ruby-identifier">rows</span>) <span class="ruby-operator">:</span> <span class="ruby-value str">''</span>) <span class="ruby-operator">+</span> (<span class="ruby-identifier">footers</span> <span class="ruby-value">? </span><span class="ruby-identifier">tfoot</span>(<span class="ruby-identifier">footers</span>) <span class="ruby-operator">:</span> <span class="ruby-value str">''</span>))
+76:     <span class="ruby-keyword kw">end</span>
+77:     <span class="ruby-keyword kw">return</span> <span class="ruby-node">&quot;&lt;table#{attrs_to_string(ops,[:id,:class])}&gt;\n&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">text</span> <span class="ruby-operator">+</span> <span class="ruby-value str">&quot;&lt;/table&gt;\n&quot;</span>
+78:   <span class="ruby-keyword kw">end</span>
+</pre>
+</div><!--sourcecode-->
+<!-- ENDIF:sourcecode-->
+<!-- END methods -->
+<!--START:methods-->
+<h2 class="methodname"><a name="M000018">
+
+ <b>tables</b>(ops={})
+</a>
+</h2>
+
+<!--IF:m_desc-->
+<div class="description">
+<p>
+Options:
+</p>
+<pre>
+  :texts
+</pre>
+<p>
+Return:
+</p>
+<pre>
+  &lt;table&gt;
+  texts[0]
+  &lt;/table&gt;
+  &lt;table&gt;
+  texts[0]
+  &lt;/table&gt;
+  ...
+</pre>
+</div><!--description-->
+<!--ENDIF:m_desc-->
+<!--IF:sourcecode -->
+<div class="sourcecode">
+<h2>Source Code</h2>
+<pre>
+    <span class="ruby-comment cmt"># File lib/html_output.rb, line 93</span>
+93:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">tables</span>(<span class="ruby-identifier">ops</span>={})
+94:     <span class="ruby-identifier">ops</span>[<span class="ruby-identifier">:texts</span>].<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">text</span><span class="ruby-operator">|</span> <span class="ruby-identifier">table</span>(<span class="ruby-identifier">ops</span>.<span class="ruby-identifier">merge</span>(<span class="ruby-identifier">:text=</span><span class="ruby-operator">&gt;</span><span class="ruby-identifier">text</span>))}.<span class="ruby-identifier">join</span>
+95:   <span class="ruby-keyword kw">end</span>
+</pre>
+</div><!--sourcecode-->
+<!-- ENDIF:sourcecode-->
+<!-- END methods -->
+<!--START:methods-->
+<h2 class="methodname"><a name="M000022">
+
+ <b>tbody</b>(rows)
+</a>
+</h2>
+
+<!--IF:m_desc-->
+<div class="description">
+<p>
+Return:
+</p>
+<pre>
+  &lt;tbody&gt;
+  &lt;tr&gt;
+  &lt;td&gt;row[0][0]&lt;/td&gt;
+  &lt;td&gt;row[0][1]&lt;/td&gt;
+  &lt;td&gt;row[0][2]&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+  &lt;td&gt;row[1][0]&lt;/td&gt;
+  &lt;td&gt;row[1][1]&lt;/td&gt;
+  &lt;td&gt;row[1][2]&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+  &lt;td&gt;row[2][0]&lt;/td&gt;
+  &lt;td&gt;row[2][1]&lt;/td&gt;
+  &lt;td&gt;row[2][2]&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;/tbody&gt;
+</pre>
+</div><!--description-->
+<!--ENDIF:m_desc-->
+<!--IF:sourcecode -->
+<div class="sourcecode">
+<h2>Source Code</h2>
+<pre>
+     <span class="ruby-comment cmt"># File lib/html_output.rb, line 147</span>
+147:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">tbody</span>(<span class="ruby-identifier">rows</span>)
+148:     <span class="ruby-value str">&quot;&lt;tbody&gt;\n&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">trs</span>(<span class="ruby-identifier">rows</span>) <span class="ruby-operator">+</span> <span class="ruby-value str">&quot;&lt;/tbody&gt;\n&quot;</span>
+149:   <span class="ruby-keyword kw">end</span>
+</pre>
+</div><!--sourcecode-->
+<!-- ENDIF:sourcecode-->
+<!-- END methods -->
+<!--START:methods-->
+<h2 class="methodname"><a name="M000025">
+
+ <b>td</b>(cell)
+</a>
+</h2>
+
+<!--IF:m_desc-->
+<div class="description">
+<p>
+Return:
+</p>
+<pre>
+  &lt;td&gt;cell&lt;/td&gt;
+</pre>
+</div><!--description-->
+<!--ENDIF:m_desc-->
+<!--IF:sourcecode -->
+<div class="sourcecode">
+<h2>Source Code</h2>
+<pre>
+     <span class="ruby-comment cmt"># File lib/html_output.rb, line 194</span>
+194:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">td</span>(<span class="ruby-identifier">cell</span>)
+195:     <span class="ruby-value str">&quot;&lt;td&gt;&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">cell</span>.<span class="ruby-identifier">to_s</span> <span class="ruby-operator">+</span> <span class="ruby-value str">&quot;&lt;/td&gt;\n&quot;</span>
+196:   <span class="ruby-keyword kw">end</span>
+</pre>
+</div><!--sourcecode-->
+<!-- ENDIF:sourcecode-->
+<!-- END methods -->
+<!--START:methods-->
+<h2 class="methodname"><a name="M000026">
+
+ <b>tds</b>(cells)
+</a>
+</h2>
+
+<!--IF:m_desc-->
+<div class="description">
+<p>
+Return:
+</p>
+<pre>
+  &lt;td&gt;cells[0]&lt;/td&gt;
+  &lt;td&gt;cells[1]&lt;/td&gt;
+  &lt;td&gt;cells[2]&lt;/td&gt;
+</pre>
+</div><!--description-->
+<!--ENDIF:m_desc-->
+<!--IF:sourcecode -->
+<div class="sourcecode">
+<h2>Source Code</h2>
+<pre>
+     <span class="ruby-comment cmt"># File lib/html_output.rb, line 204</span>
+204:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">tds</span>(<span class="ruby-identifier">cells</span>)
+205:     <span class="ruby-identifier">cells</span>.<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">x</span><span class="ruby-operator">|</span> <span class="ruby-identifier">td</span>(<span class="ruby-identifier">x</span>)}.<span class="ruby-identifier">join</span>
+206:   <span class="ruby-keyword kw">end</span>
+</pre>
+</div><!--sourcecode-->
+<!-- ENDIF:sourcecode-->
+<!-- END methods -->
+<!--START:methods-->
+<h2 class="methodname"><a name="M000027">
+
+ <b>tfoot</b>(footers)
+</a>
+</h2>
+
+<!--IF:m_desc-->
+<div class="description">
+<p>
+Return:
+</p>
+<pre>
+  &lt;tfoot&gt;
+  &lt;th&gt;
+  &lt;th&gt;footer[0]&lt;/th&gt;
+  &lt;th&gt;footer[1]&lt;/th&gt;
+  &lt;th&gt;footer[2]&lt;/th&gt;
+  &lt;/tfoot&gt;
+</pre>
+</div><!--description-->
+<!--ENDIF:m_desc-->
+<!--IF:sourcecode -->
+<div class="sourcecode">
+<h2>Source Code</h2>
+<pre>
+     <span class="ruby-comment cmt"># File lib/html_output.rb, line 217</span>
+217:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">tfoot</span>(<span class="ruby-identifier">footers</span>)
+218:     <span class="ruby-value str">&quot;&lt;tfoot&gt;\n&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">tr</span>(<span class="ruby-identifier">ths</span>(<span class="ruby-identifier">footers</span>)) <span class="ruby-operator">+</span> <span class="ruby-value str">&quot;&lt;/tfoot&gt;\n&quot;</span>
+219:   <span class="ruby-keyword kw">end</span>
+</pre>
+</div><!--sourcecode-->
+<!-- ENDIF:sourcecode-->
+<!-- END methods -->
+<!--START:methods-->
+<h2 class="methodname"><a name="M000020">
+
+ <b>th</b>(header)
+</a>
+</h2>
+
+<!--IF:m_desc-->
+<div class="description">
+<p>
+Return:
+</p>
+<pre>
+  &lt;th&gt;header&lt;/th&gt;
+</pre>
+</div><!--description-->
+<!--ENDIF:m_desc-->
+<!--IF:sourcecode -->
+<div class="sourcecode">
+<h2>Source Code</h2>
+<pre>
+     <span class="ruby-comment cmt"># File lib/html_output.rb, line 113</span>
+113:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">th</span>(<span class="ruby-identifier">header</span>)
+114:     <span class="ruby-value str">&quot;&lt;th&gt;&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">header</span>.<span class="ruby-identifier">to_s</span> <span class="ruby-operator">+</span> <span class="ruby-value str">&quot;&lt;/th&gt;\n&quot;</span>
+115:   <span class="ruby-keyword kw">end</span>
+</pre>
+</div><!--sourcecode-->
+<!-- ENDIF:sourcecode-->
+<!-- END methods -->
+<!--START:methods-->
+<h2 class="methodname"><a name="M000019">
+
+ <b>thead</b>(headers)
+</a>
+</h2>
+
+<!--IF:m_desc-->
+<div class="description">
+<p>
+Return:
+</p>
+<pre>
+  &lt;thead&gt;
+  &lt;th&gt;header[0]&lt;/th&gt;
+  &lt;th&gt;header[1]&lt;/th&gt;
+  &lt;th&gt;header[2]&lt;/th&gt;
+  &lt;/thead&gt;
+</pre>
+</div><!--description-->
+<!--ENDIF:m_desc-->
+<!--IF:sourcecode -->
+<div class="sourcecode">
+<h2>Source Code</h2>
+<pre>
+     <span class="ruby-comment cmt"># File lib/html_output.rb, line 105</span>
+105:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">thead</span>(<span class="ruby-identifier">headers</span>)
+106:     <span class="ruby-value str">&quot;&lt;thead&gt;\n&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">tr</span>(<span class="ruby-identifier">ths</span>(<span class="ruby-identifier">headers</span>)) <span class="ruby-operator">+</span> <span class="ruby-value str">&quot;&lt;/thead&gt;\n&quot;</span>
+107:   <span class="ruby-keyword kw">end</span>
+</pre>
+</div><!--sourcecode-->
+<!-- ENDIF:sourcecode-->
+<!-- END methods -->
+<!--START:methods-->
+<h2 class="methodname"><a name="M000021">
+
+ <b>ths</b>(headers)
+</a>
+</h2>
+
+<!--IF:m_desc-->
+<div class="description">
+<p>
+Return:
+</p>
+<pre>
+  &lt;th&gt;header[0]&lt;/th&gt;
+  &lt;th&gt;header[1]&lt;/th&gt;
+  &lt;th&gt;header[2]&lt;/th&gt;
+</pre>
+</div><!--description-->
+<!--ENDIF:m_desc-->
+<!--IF:sourcecode -->
+<div class="sourcecode">
+<h2>Source Code</h2>
+<pre>
+     <span class="ruby-comment cmt"># File lib/html_output.rb, line 123</span>
+123:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">ths</span>(<span class="ruby-identifier">headers</span>)
+124:     <span class="ruby-identifier">headers</span>.<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">x</span><span class="ruby-operator">|</span> <span class="ruby-identifier">th</span>(<span class="ruby-identifier">x</span>)}.<span class="ruby-identifier">join</span>
+125:   <span class="ruby-keyword kw">end</span>
+</pre>
+</div><!--sourcecode-->
+<!-- ENDIF:sourcecode-->
+<!-- END methods -->
+<!--START:methods-->
+<h2 class="methodname"><a name="M000023">
+
+ <b>tr</b>(row)
+</a>
+</h2>
+
+<!--IF:m_desc-->
+<div class="description">
+<p>
+Return:
+</p>
+<pre>
+ &lt;tr&gt;
+ row
+ &lt;/tr&gt;
+</pre>
+<p>
+Return when row is enumerable:
+</p>
+<pre>
+  &lt;tr&gt;
+  &lt;td&gt;row[0]&lt;/td&gt;
+  &lt;td&gt;row[1]&lt;/td&gt;
+  &lt;td&gt;row[2]&lt;/td&gt;
+  &lt;/tr&gt;
+</pre>
+</div><!--description-->
+<!--ENDIF:m_desc-->
+<!--IF:sourcecode -->
+<div class="sourcecode">
+<h2>Source Code</h2>
+<pre>
+     <span class="ruby-comment cmt"># File lib/html_output.rb, line 164</span>
+164:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">tr</span>(<span class="ruby-identifier">row</span>)
+165:     <span class="ruby-value str">&quot;&lt;tr&gt;\n&quot;</span> <span class="ruby-operator">+</span> (<span class="ruby-identifier">row</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">String</span>) <span class="ruby-operator">?</span> <span class="ruby-identifier">row</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">row</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">Enumerable</span>) <span class="ruby-operator">?</span> <span class="ruby-identifier">tds</span>(<span class="ruby-identifier">row</span>) <span class="ruby-operator">:</span> <span class="ruby-identifier">row</span>.<span class="ruby-identifier">to_s</span>) <span class="ruby-operator">+</span> <span class="ruby-value str">&quot;&lt;/tr&gt;\n&quot;</span>
+166:   <span class="ruby-keyword kw">end</span>
+</pre>
+</div><!--sourcecode-->
+<!-- ENDIF:sourcecode-->
+<!-- END methods -->
+<!--START:methods-->
+<h2 class="methodname"><a name="M000024">
+
+ <b>trs</b>(rows)
+</a>
+</h2>
+
+<!--IF:m_desc-->
+<div class="description">
+<p>
+Return:
+</p>
+<pre>
+  &lt;tr&gt;
+  &lt;td&gt;row[0][0]&lt;/td&gt;
+  &lt;td&gt;row[0][1]&lt;/td&gt;
+  &lt;td&gt;row[0][2]&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+  &lt;td&gt;row[1][0]&lt;/td&gt;
+  &lt;td&gt;row[1][1]&lt;/td&gt;
+  &lt;td&gt;row[1][2]&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+  &lt;td&gt;row[2][0]&lt;/td&gt;
+  &lt;td&gt;row[2][1]&lt;/td&gt;
+  &lt;td&gt;row[2][2]&lt;/td&gt;
+  &lt;/tr&gt;
+</pre>
+</div><!--description-->
+<!--ENDIF:m_desc-->
+<!--IF:sourcecode -->
+<div class="sourcecode">
+<h2>Source Code</h2>
+<pre>
+     <span class="ruby-comment cmt"># File lib/html_output.rb, line 186</span>
+186:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">trs</span>(<span class="ruby-identifier">rows</span>)
+187:     <span class="ruby-identifier">rows</span>.<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">x</span><span class="ruby-operator">|</span> <span class="ruby-identifier">tr</span>(<span class="ruby-identifier">x</span>)}.<span class="ruby-identifier">join</span>
+188:   <span class="ruby-keyword kw">end</span>
+</pre>
+</div><!--sourcecode-->
+<!-- ENDIF:sourcecode-->
+<!-- END methods -->
+<!--START:methods-->
+<h2 class="methodname"><a name="M000028">
+
+ <b>ul</b>(list)
+</a>
+</h2>
+
+<!--IF:m_desc-->
+<div class="description">
+<p>
+Return:
+</p>
+<pre>
+  &lt;ul&gt;
+  list
+  &lt;/ul&gt;
+</pre>
+<p>
+Return when list is enumerable:
+</p>
+<pre>
+  &lt;ul&gt;
+  &lt;li&gt;list[1]&lt;/li&gt;
+  &lt;li&gt;list[2]&lt;/li&gt;
+  &lt;li&gt;list[3]&lt;/li&gt;
+  &lt;/ul&gt;
+</pre>
+</div><!--description-->
+<!--ENDIF:m_desc-->
+<!--IF:sourcecode -->
+<div class="sourcecode">
+<h2>Source Code</h2>
+<pre>
+     <span class="ruby-comment cmt"># File lib/html_output.rb, line 234</span>
+234:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">ul</span>(<span class="ruby-identifier">list</span>)
+235:     <span class="ruby-value str">&quot;&lt;ul&gt;\n&quot;</span> <span class="ruby-operator">+</span> (<span class="ruby-identifier">list</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">String</span>) <span class="ruby-operator">?</span> <span class="ruby-identifier">list</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">list</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">Enumerable</span>) <span class="ruby-operator">?</span> <span class="ruby-identifier">lis</span>(<span class="ruby-identifier">list</span>) <span class="ruby-operator">:</span> <span class="ruby-identifier">list</span>.<span class="ruby-identifier">to_s</span>) <span class="ruby-operator">+</span> <span class="ruby-value str">&quot;&lt;/ul&gt;\n&quot;</span>
+236:   <span class="ruby-keyword kw">end</span>
+</pre>
+</div><!--sourcecode-->
+<!-- ENDIF:sourcecode-->
+<!-- END methods -->
+<!--START:methods-->
+<h2 class="methodname"><a name="M000029">
+
+ <b>uls</b>(lists)
+</a>
+</h2>
+
+<!--IF:m_desc-->
+<div class="description">
+<p>
+Return:
+</p>
+<pre>
+  &lt;ul&gt;
+  &lt;li&gt;list[0][1]&lt;/li&gt;
+  &lt;li&gt;list[0][2]&lt;/li&gt;
+  &lt;li&gt;list[0][3]&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;ul&gt;
+  &lt;li&gt;list[1][1]&lt;/li&gt;
+  &lt;li&gt;list[1][2]&lt;/li&gt;
+  &lt;li&gt;list[1][3]&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;ul&gt;
+  &lt;li&gt;list[2][1]&lt;/li&gt;
+  &lt;li&gt;list[2][2]&lt;/li&gt;
+  &lt;li&gt;list[2][3]&lt;/li&gt;
+  &lt;/ul&gt;
+</pre>
+</div><!--description-->
+<!--ENDIF:m_desc-->
+<!--IF:sourcecode -->
+<div class="sourcecode">
+<h2>Source Code</h2>
+<pre>
+     <span class="ruby-comment cmt"># File lib/html_output.rb, line 256</span>
+256:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">uls</span>(<span class="ruby-identifier">lists</span>)
+257:    <span class="ruby-identifier">lists</span>.<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">x</span><span class="ruby-operator">|</span> <span class="ruby-identifier">ul</span>(<span class="ruby-identifier">x</span>)}.<span class="ruby-identifier">join</span>
+258:   <span class="ruby-keyword kw">end</span>
+</pre>
+</div><!--sourcecode-->
+<!-- ENDIF:sourcecode-->
+<!-- END methods -->
+</div><!--methods-->
+<!--ENDIF:methods-->
+</div><!-- END method_list -->
+<!--START:method_list-->
+<!--IF:methods -->
+<h2>Protected Instance methods</h2>
+<div class="methods">
+<!--START:methods-->
+<h2 class="methodname"><a name="M000032">
+
+ <b>attrs_to_string</b>(ops,keys=nil)
+</a>
+</h2>
+
+<!--IF:m_desc-->
+<div class="description">
+<p>
+There&#8216;s likely a better more-standard way to do this.
+</p>
+<p>
+This method is only used by the <a href="HTMLOutput.html#M000017">table</a>
+method.
+</p>
+<p>
+Return a string of the attributes suitable for HTML
+</p>
+<h2>Example</h2>
+<pre>
+  hash={:foo'=&gt;'bar',:goo'=&gt;'car',;hoo=&gt;'dar'}
+  attrs(hash) =&gt; ' foo=&quot;bar&quot; goo=&quot;car&quot; hoo=&quot;dar&quot;'
+</pre>
+<h2>Example with selected keys</h2>
+<pre>
+  hash={:foo'=&gt;'bar',:goo'=&gt;'car',;hoo=&gt;'dar'}
+  attrs(hash,[:foo,:hoo]) =&gt; ' foo=&quot;bar&quot; hoo=&quot;dar&quot;'
+</pre>
+</div><!--description-->
+<!--ENDIF:m_desc-->
+<!--IF:sourcecode -->
+<div class="sourcecode">
+<h2>Source Code</h2>
+<pre>
+     <span class="ruby-comment cmt"># File lib/html_output.rb, line 295</span>
+295:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">attrs_to_string</span>(<span class="ruby-identifier">ops</span>,<span class="ruby-identifier">keys</span>=<span class="ruby-keyword kw">nil</span>)
+296:    <span class="ruby-keyword kw">return</span> <span class="ruby-value str">''</span> <span class="ruby-keyword kw">if</span> <span class="ruby-operator">!</span><span class="ruby-identifier">ops</span> <span class="ruby-keyword kw">or</span> <span class="ruby-identifier">ops</span><span class="ruby-operator">==</span>{}
+297:    <span class="ruby-identifier">keys</span><span class="ruby-operator">||=</span><span class="ruby-identifier">ops</span>.<span class="ruby-identifier">keys</span>
+298:    <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">keys</span>.<span class="ruby-identifier">inject</span>(<span class="ruby-value str">''</span>){<span class="ruby-operator">|</span><span class="ruby-identifier">s</span>,<span class="ruby-identifier">k</span><span class="ruby-operator">|</span> <span class="ruby-identifier">s</span> = (<span class="ruby-identifier">ops</span>[<span class="ruby-identifier">k</span>] <span class="ruby-operator">?</span> <span class="ruby-identifier">s</span><span class="ruby-operator">+=</span><span class="ruby-node">&quot; #{k}=\&quot;#{ops[k]}\&quot;&quot;</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">s</span>)}
+299:   <span class="ruby-keyword kw">end</span>
+</pre>
+</div><!--sourcecode-->
+<!-- ENDIF:sourcecode-->
+<!-- END methods -->
+</div><!--methods-->
+<!--ENDIF:methods-->
+</div><!-- END method_list -->
+</div><!-- ENDIF method_list -->
+  <!-- method descriptions -->
+
+
+</div><!-- indent -->
+</body>
+</html>
