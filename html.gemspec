@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
 
-  s.name              = "webget_ruby_html_output"
+  s.name              = "webget_ruby_html"
   s.summary           = "WebGet.com Ruby HTML helpers for tables, headers, rows, cells, lists, etc."
   s.version           = "1.0.4"
   s.author            = "WebGet"
