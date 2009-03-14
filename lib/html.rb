@@ -1,4 +1,4 @@
-# = HTML Output
+# = WebGet.com Ruby HTML helpers for tables, lists, etc.
 #
 # Author:: Joel Parker Henderson, joelparkerhenderson@gmail.com
 # Copyright:: Copyright (c) 2006-2009 Joel Parker Henderson
@@ -7,7 +7,7 @@
 #
 ##
 
-module HTMLOutput
+module HTML
 
   # Options:
   #   :text : the complete text of the table, e.g. <table>text</table>
