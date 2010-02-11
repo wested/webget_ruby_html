@@ -1,13 +1,53 @@
-# = WebGet.com Ruby HTML helpers for tables, lists, etc.
-#
-# Author:: Joel Parker Henderson, joelparkerhenderson@gmail.com
-# Copyright:: Copyright (c) 2006-2009 Joel Parker Henderson
-# License:: CreativeCommons License, Non-commercial Share Alike
-# License:: LGPL, GNU Lesser General Public License
-#
-##
+=begin rdoc
+
+= WebGet.com Ruby HTML helpers for tables, lists, etc.
+
+Author:: Joel Parker Henderson, joelparkerhenderson@gmail.com
+Copyright:: Copyright (c) 2006-2010 Joel Parker Henderson
+License:: CreativeCommons License, Non-commercial Share Alike
+License:: LGPL, GNU Lesser General Public License
+
+==Changes
+
+1.0.6 add to gemcutter
+1.0.5 comment & wrap
+1.0.4 tables
+1.0.0 lists
+
+=end
 
 module HTML
+
+  # Return the text wrapped in a comment.
+  #
+  # ==Example
+  #   comment('foo') => "<!--foo-->"
+  
+  def comment(text)
+    "<!--#{text}-->"
+  end
+
+  # Return the text wrapped in a tag pair.
+  #
+  # ==Example
+  #   wrap('foo','<bar>') => "<bar>foo</bar>"
+  #
+  # ==Example: you can omit the tag angle brackets
+  #   wrap('foo','bar') => "<bar>foo</bar>"
+  #
+  # ==Example: you can use arbitrary tag attributes
+  #   wrap('foo','<bar x="1" y="2">') => "<bar x=1 y=2>foo</bar>"
+  #
+
+  def wrap(text,tag)
+    t=tag
+    t.sub!(/^</,'')
+    t.sub!(/>$/,'')
+    open=t
+    shut=t.split.first
+    "<#{open}>#{text}</#{shut}>"
+  end
+
 
   # Options:
   #   :text : the complete text of the table, e.g. <table>text</table>
@@ -274,6 +314,7 @@ module HTML
   def lis(items)
     items.map{|x| li(x)}.join
   end
+
 
 
   protected

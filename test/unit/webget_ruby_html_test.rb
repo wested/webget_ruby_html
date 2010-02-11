@@ -1,5 +1,5 @@
 require 'test/unit'
-require 'html'
+require 'webget_ruby_html'
 
 class Testing < Test::Unit::TestCase
 
@@ -9,6 +9,16 @@ class Testing < Test::Unit::TestCase
   CELLS=['a','b','c']
   ITEMS=['a','b','c']
   ROWS=[['a','b','c'],['d','e','f'],['g','h','i']]
+
+  def test_comment
+    assert_equal("<!--a-->",comment('a'))
+  end
+
+  def test_wrap
+    assert_equal("<b>a</b>",wrap('a','<b>'))
+    assert_equal("<b>a</b>",wrap('a','b'))
+    assert_equal("<b c d e>a</b>",wrap('a','b c d e'))
+  end
 
   def test_li
     assert_equal("<li>a</li>\n",li('a'))
