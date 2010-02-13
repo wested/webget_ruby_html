@@ -1,0 +1,1065 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<title>Module: HTML</title>
+
+	<link rel="stylesheet" href="./rdoc.css" type="text/css" media="screen" />
+
+	<script src="./js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+
+</head>
+<body class="module">
+
+	<div id="metadata">
+		<div id="file-metadata">
+			<div id="file-list-section" class="section">
+				<h3 class="section-header">In Files</h3>
+				<div class="section-body">
+					<ul>
+					
+						<li><a href="./lib/webget_ruby_html_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="lib/webget_ruby_html.rb">lib/webget_ruby_html.rb</a></li>
+					
+					</ul>
+				</div>
+			</div>
+
+			
+		</div>
+
+		<div id="class-metadata">
+
+			<!-- Parent Class -->
+			
+
+			<!-- Namespace Contents -->
+			
+
+			<!-- Method Quickref -->
+			
+			<div id="method-list-section" class="section">
+				<h3 class="section-header">Methods</h3>
+				<ul class="link-list">
+					
+					<li><a href="#M000035">#attrs_to_string</a></li>
+					
+					<li><a href="#M000000">#comment</a></li>
+					
+					<li><a href="#M000033">#li</a></li>
+					
+					<li><a href="#M000034">#lis</a></li>
+					
+					<li><a href="#M000006">#table</a></li>
+					
+					<li><a href="#M000019">#tables</a></li>
+					
+					<li><a href="#M000023">#tbody</a></li>
+					
+					<li><a href="#M000028">#td</a></li>
+					
+					<li><a href="#M000029">#tds</a></li>
+					
+					<li><a href="#M000030">#tfoot</a></li>
+					
+					<li><a href="#M000021">#th</a></li>
+					
+					<li><a href="#M000020">#thead</a></li>
+					
+					<li><a href="#M000022">#ths</a></li>
+					
+					<li><a href="#M000026">#tr</a></li>
+					
+					<li><a href="#M000027">#trs</a></li>
+					
+					<li><a href="#M000031">#ul</a></li>
+					
+					<li><a href="#M000032">#uls</a></li>
+					
+					<li><a href="#M000002">#wrap</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<!-- Included Modules -->
+			
+		</div>
+
+		<div id="project-metadata">
+			
+			
+			<div id="fileindex-section" class="section project-section">
+				<h3 class="section-header">Files</h3>
+				<ul>
+				
+					<li class="file"><a href="./LICENSE_txt.html">LICENSE.txt</a></li>
+				
+					<li class="file"><a href="./README_rdoc.html">README.rdoc</a></li>
+				
+					<li class="file"><a href="./webget_ruby_html_gemspec.html">webget_ruby_html.gemspec</a></li>
+				
+					<li class="file"><a href="./webget_ruby_html_sha512_txt.html">webget_ruby_html.sha512.txt</a></li>
+				
+				</ul>
+			</div>
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="./images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="./HTML.html">HTML</a></li>
+				
+					<li><a href="./Testing.html">Testing</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h1 class="module">HTML</h1>
+
+		<div id="description">
+			<h1>WebGet Ruby Gem: <a href="HTML.html">HTML</a> helpers for tables, lists, etc.</h1>
+<table>
+<tr><td valign="top">Author:</td><td>Joel Parker Henderson, joelparkerhenderson@gmail.com
+
+</td></tr>
+<tr><td valign="top">Copyright:</td><td>Copyright &#169; 2006-2010 Joel Parker Henderson
+
+</td></tr>
+<tr><td valign="top">License:</td><td>CreativeCommons License, Non-commercial Share Alike
+
+</td></tr>
+<tr><td valign="top">License:</td><td>LGPL, GNU Lesser General Public License
+
+</td></tr>
+</table>
+<h2>Changes</h2>
+<p>
+1.0.6 add to gemcutter 1.0.5 comment &amp; wrap 1.0.4 tables 1.0.0 lists
+</p>
+
+		</div>
+
+		<!-- Constants -->
+		
+
+		<!-- Attributes -->
+		
+
+		<!-- Methods -->
+		
+		<div id="public-instance-method-details" class="method-section section">
+			<h3 class="section-header">Public Instance Methods</h3>
+
+		
+			<div id="comment-method" class="method-detail ">
+				<a name="M000000"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">comment</span><span
+						class="method-args">(text)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Return the text wrapped in a comment.
+</p>
+<h2>Example</h2>
+<pre>
+  comment('foo') =&gt; &quot;&lt;!--foo--&gt;&quot;
+</pre>
+					
+
+					
+					<div class="method-source-code"
+						id="comment-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/webget_ruby_html.rb, line 26</span>
+26:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">comment</span>(<span class="ruby-identifier">text</span>)
+27:     <span class="ruby-node">&quot;&lt;!--#{text}--&gt;&quot;</span>
+28:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="li-method" class="method-detail ">
+				<a name="M000033"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">li</span><span
+						class="method-args">(item)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Return:
+</p>
+<pre>
+  &lt;li&gt;item&lt;/li&gt;
+</pre>
+					
+
+					
+					<div class="method-source-code"
+						id="li-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/webget_ruby_html.rb, line 304</span>
+304:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">li</span>(<span class="ruby-identifier">item</span>)
+305:     <span class="ruby-value str">&quot;&lt;li&gt;&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">item</span>.<span class="ruby-identifier">to_s</span> <span class="ruby-operator">+</span> <span class="ruby-value str">&quot;&lt;/li&gt;\n&quot;</span>
+306:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="lis-method" class="method-detail ">
+				<a name="M000034"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">lis</span><span
+						class="method-args">(items)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Return:
+</p>
+<pre>
+  &lt;li&gt;item[0]&lt;/li&gt;
+  &lt;li&gt;item[1]&lt;/li&gt;
+  &lt;li&gt;item[2]&lt;/li&gt;
+</pre>
+					
+
+					
+					<div class="method-source-code"
+						id="lis-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/webget_ruby_html.rb, line 314</span>
+314:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">lis</span>(<span class="ruby-identifier">items</span>)
+315:     <span class="ruby-identifier">items</span>.<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">x</span><span class="ruby-operator">|</span> <span class="ruby-identifier">li</span>(<span class="ruby-identifier">x</span>)}.<span class="ruby-identifier">join</span>
+316:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="table-method" class="method-detail ">
+				<a name="M000006"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">table</span><span
+						class="method-args">(ops={})</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Options:
+</p>
+<pre>
+  :text : the complete text of the table, e.g. &lt;table&gt;text&lt;/table&gt;
+  :headers
+  :footers
+  :rows
+  :class is the table's css class, e.g. :class=&gt;'sortable'
+  :id is the table's css id, e.g. :id=&gt;'mytable'
+</pre>
+<h2>Example</h2>
+<pre>
+  headers = ['a','b','c']
+  footers = ['x','y','z']
+  rows=[['d','e,'f'],['g','h,'i'],['j','k','l']
+  table(:id=&gt;'foo', :class=&gt;'bar', :headers=&gt;headers, :footers=&gt;footers, :rows=&gt;rows
+</pre>
+<h2>Return <a href="HTML.html">HTML</a></h2>
+<pre>
+  &lt;table id=&quot;foo&quot; class=&quot;bar&quot;&gt;
+  &lt;thead&gt;
+  &lt;tr&gt;
+  &lt;th&gt;a&lt;/th&gt;
+  &lt;th&gt;b&lt;/th&gt;
+  &lt;th&gt;c&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;tr&gt;
+  &lt;td&gt;d&lt;/td&gt;
+  &lt;td&gt;e&lt;/td&gt;
+  &lt;td&gt;f&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+  &lt;td&gt;g&lt;/td&gt;
+  &lt;td&gt;h&lt;/td&gt;
+  &lt;td&gt;i&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+  &lt;td&gt;j&lt;/td&gt;
+  &lt;td&gt;k&lt;/td&gt;
+  &lt;td&gt;l&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tfoot&gt;
+  &lt;tr&gt;
+  &lt;th&gt;
+  &lt;th&gt;x&lt;/th&gt;
+  &lt;th&gt;y&lt;/th&gt;
+  &lt;th&gt;z&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;/tfoot&gt;
+  &lt;/table&gt;
+</pre>
+<h2>Special cases</h2>
+<p>
+If headers or row or footers are nil, then this skips them.
+</p>
+<p>
+If footers==[] then this method will use a footers array with blanks that
+is the same length as the headers array.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="table-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/webget_ruby_html.rb, line 109</span>
+109:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">table</span>(<span class="ruby-identifier">ops</span>={})
+110:     <span class="ruby-identifier">text</span>=<span class="ruby-identifier">ops</span>[<span class="ruby-identifier">:text</span>]
+111:     <span class="ruby-keyword kw">if</span> <span class="ruby-operator">!</span><span class="ruby-identifier">text</span>
+112:      <span class="ruby-identifier">headers</span>=<span class="ruby-identifier">ops</span>[<span class="ruby-identifier">:headers</span>]
+113:      <span class="ruby-identifier">footers</span>=(<span class="ruby-keyword kw">defined?</span>(<span class="ruby-identifier">ops</span>[<span class="ruby-identifier">:footers</span>]) <span class="ruby-operator">?</span> ((<span class="ruby-identifier">ops</span>[<span class="ruby-identifier">:footers</span>]<span class="ruby-operator">==</span><span class="ruby-keyword kw">true</span>) <span class="ruby-operator">?</span> <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">headers</span>.<span class="ruby-identifier">size</span>,<span class="ruby-value str">''</span>) <span class="ruby-operator">:</span> <span class="ruby-identifier">ops</span>[<span class="ruby-identifier">:footers</span>]) <span class="ruby-operator">:</span> <span class="ruby-keyword kw">false</span>)
+114:      <span class="ruby-identifier">rows</span>=<span class="ruby-identifier">ops</span>[<span class="ruby-identifier">:rows</span>]
+115:      <span class="ruby-identifier">text</span>=((<span class="ruby-identifier">headers</span> <span class="ruby-value">? </span><span class="ruby-identifier">thead</span>(<span class="ruby-identifier">headers</span>) <span class="ruby-operator">:</span> <span class="ruby-value str">''</span>) <span class="ruby-operator">+</span> (<span class="ruby-identifier">rows</span> <span class="ruby-value">? </span><span class="ruby-identifier">tbody</span>(<span class="ruby-identifier">rows</span>) <span class="ruby-operator">:</span> <span class="ruby-value str">''</span>) <span class="ruby-operator">+</span> (<span class="ruby-identifier">footers</span> <span class="ruby-value">? </span><span class="ruby-identifier">tfoot</span>(<span class="ruby-identifier">footers</span>) <span class="ruby-operator">:</span> <span class="ruby-value str">''</span>))
+116:     <span class="ruby-keyword kw">end</span>
+117:     <span class="ruby-keyword kw">return</span> <span class="ruby-node">&quot;&lt;table#{attrs_to_string(ops,[:id,:class])}&gt;\n&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">text</span> <span class="ruby-operator">+</span> <span class="ruby-value str">&quot;&lt;/table&gt;\n&quot;</span>
+118:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="tables-method" class="method-detail ">
+				<a name="M000019"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">tables</span><span
+						class="method-args">(ops={})</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Options:
+</p>
+<pre>
+  :texts
+</pre>
+<p>
+Return:
+</p>
+<pre>
+  &lt;table&gt;
+  texts[0]
+  &lt;/table&gt;
+  &lt;table&gt;
+  texts[0]
+  &lt;/table&gt;
+  ...
+</pre>
+					
+
+					
+					<div class="method-source-code"
+						id="tables-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/webget_ruby_html.rb, line 133</span>
+133:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">tables</span>(<span class="ruby-identifier">ops</span>={})
+134:     <span class="ruby-identifier">ops</span>[<span class="ruby-identifier">:texts</span>].<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">text</span><span class="ruby-operator">|</span> <span class="ruby-identifier">table</span>(<span class="ruby-identifier">ops</span>.<span class="ruby-identifier">merge</span>(<span class="ruby-identifier">:text=</span><span class="ruby-operator">&gt;</span><span class="ruby-identifier">text</span>))}.<span class="ruby-identifier">join</span>
+135:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="tbody-method" class="method-detail ">
+				<a name="M000023"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">tbody</span><span
+						class="method-args">(rows)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Return:
+</p>
+<pre>
+  &lt;tbody&gt;
+  &lt;tr&gt;
+  &lt;td&gt;row[0][0]&lt;/td&gt;
+  &lt;td&gt;row[0][1]&lt;/td&gt;
+  &lt;td&gt;row[0][2]&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+  &lt;td&gt;row[1][0]&lt;/td&gt;
+  &lt;td&gt;row[1][1]&lt;/td&gt;
+  &lt;td&gt;row[1][2]&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+  &lt;td&gt;row[2][0]&lt;/td&gt;
+  &lt;td&gt;row[2][1]&lt;/td&gt;
+  &lt;td&gt;row[2][2]&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;/tbody&gt;
+</pre>
+					
+
+					
+					<div class="method-source-code"
+						id="tbody-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/webget_ruby_html.rb, line 187</span>
+187:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">tbody</span>(<span class="ruby-identifier">rows</span>)
+188:     <span class="ruby-value str">&quot;&lt;tbody&gt;\n&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">trs</span>(<span class="ruby-identifier">rows</span>) <span class="ruby-operator">+</span> <span class="ruby-value str">&quot;&lt;/tbody&gt;\n&quot;</span>
+189:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="td-method" class="method-detail ">
+				<a name="M000028"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">td</span><span
+						class="method-args">(cell)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Return:
+</p>
+<pre>
+  &lt;td&gt;cell&lt;/td&gt;
+</pre>
+					
+
+					
+					<div class="method-source-code"
+						id="td-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/webget_ruby_html.rb, line 234</span>
+234:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">td</span>(<span class="ruby-identifier">cell</span>)
+235:     <span class="ruby-value str">&quot;&lt;td&gt;&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">cell</span>.<span class="ruby-identifier">to_s</span> <span class="ruby-operator">+</span> <span class="ruby-value str">&quot;&lt;/td&gt;\n&quot;</span>
+236:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="tds-method" class="method-detail ">
+				<a name="M000029"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">tds</span><span
+						class="method-args">(cells)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Return:
+</p>
+<pre>
+  &lt;td&gt;cells[0]&lt;/td&gt;
+  &lt;td&gt;cells[1]&lt;/td&gt;
+  &lt;td&gt;cells[2]&lt;/td&gt;
+</pre>
+					
+
+					
+					<div class="method-source-code"
+						id="tds-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/webget_ruby_html.rb, line 244</span>
+244:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">tds</span>(<span class="ruby-identifier">cells</span>)
+245:     <span class="ruby-identifier">cells</span>.<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">x</span><span class="ruby-operator">|</span> <span class="ruby-identifier">td</span>(<span class="ruby-identifier">x</span>)}.<span class="ruby-identifier">join</span>
+246:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="tfoot-method" class="method-detail ">
+				<a name="M000030"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">tfoot</span><span
+						class="method-args">(footers)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Return:
+</p>
+<pre>
+  &lt;tfoot&gt;
+  &lt;th&gt;
+  &lt;th&gt;footer[0]&lt;/th&gt;
+  &lt;th&gt;footer[1]&lt;/th&gt;
+  &lt;th&gt;footer[2]&lt;/th&gt;
+  &lt;/tfoot&gt;
+</pre>
+					
+
+					
+					<div class="method-source-code"
+						id="tfoot-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/webget_ruby_html.rb, line 257</span>
+257:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">tfoot</span>(<span class="ruby-identifier">footers</span>)
+258:     <span class="ruby-value str">&quot;&lt;tfoot&gt;\n&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">tr</span>(<span class="ruby-identifier">ths</span>(<span class="ruby-identifier">footers</span>)) <span class="ruby-operator">+</span> <span class="ruby-value str">&quot;&lt;/tfoot&gt;\n&quot;</span>
+259:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="th-method" class="method-detail ">
+				<a name="M000021"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">th</span><span
+						class="method-args">(header)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Return:
+</p>
+<pre>
+  &lt;th&gt;header&lt;/th&gt;
+</pre>
+					
+
+					
+					<div class="method-source-code"
+						id="th-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/webget_ruby_html.rb, line 153</span>
+153:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">th</span>(<span class="ruby-identifier">header</span>)
+154:     <span class="ruby-value str">&quot;&lt;th&gt;&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">header</span>.<span class="ruby-identifier">to_s</span> <span class="ruby-operator">+</span> <span class="ruby-value str">&quot;&lt;/th&gt;\n&quot;</span>
+155:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="thead-method" class="method-detail ">
+				<a name="M000020"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">thead</span><span
+						class="method-args">(headers)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Return:
+</p>
+<pre>
+  &lt;thead&gt;
+  &lt;th&gt;header[0]&lt;/th&gt;
+  &lt;th&gt;header[1]&lt;/th&gt;
+  &lt;th&gt;header[2]&lt;/th&gt;
+  &lt;/thead&gt;
+</pre>
+					
+
+					
+					<div class="method-source-code"
+						id="thead-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/webget_ruby_html.rb, line 145</span>
+145:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">thead</span>(<span class="ruby-identifier">headers</span>)
+146:     <span class="ruby-value str">&quot;&lt;thead&gt;\n&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">tr</span>(<span class="ruby-identifier">ths</span>(<span class="ruby-identifier">headers</span>)) <span class="ruby-operator">+</span> <span class="ruby-value str">&quot;&lt;/thead&gt;\n&quot;</span>
+147:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="ths-method" class="method-detail ">
+				<a name="M000022"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">ths</span><span
+						class="method-args">(headers)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Return:
+</p>
+<pre>
+  &lt;th&gt;header[0]&lt;/th&gt;
+  &lt;th&gt;header[1]&lt;/th&gt;
+  &lt;th&gt;header[2]&lt;/th&gt;
+</pre>
+					
+
+					
+					<div class="method-source-code"
+						id="ths-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/webget_ruby_html.rb, line 163</span>
+163:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">ths</span>(<span class="ruby-identifier">headers</span>)
+164:     <span class="ruby-identifier">headers</span>.<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">x</span><span class="ruby-operator">|</span> <span class="ruby-identifier">th</span>(<span class="ruby-identifier">x</span>)}.<span class="ruby-identifier">join</span>
+165:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="tr-method" class="method-detail ">
+				<a name="M000026"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">tr</span><span
+						class="method-args">(row)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Return:
+</p>
+<pre>
+ &lt;tr&gt;
+ row
+ &lt;/tr&gt;
+</pre>
+<p>
+Return when row is enumerable:
+</p>
+<pre>
+  &lt;tr&gt;
+  &lt;td&gt;row[0]&lt;/td&gt;
+  &lt;td&gt;row[1]&lt;/td&gt;
+  &lt;td&gt;row[2]&lt;/td&gt;
+  &lt;/tr&gt;
+</pre>
+					
+
+					
+					<div class="method-source-code"
+						id="tr-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/webget_ruby_html.rb, line 204</span>
+204:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">tr</span>(<span class="ruby-identifier">row</span>)
+205:     <span class="ruby-value str">&quot;&lt;tr&gt;\n&quot;</span> <span class="ruby-operator">+</span> (<span class="ruby-identifier">row</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">String</span>) <span class="ruby-operator">?</span> <span class="ruby-identifier">row</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">row</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">Enumerable</span>) <span class="ruby-operator">?</span> <span class="ruby-identifier">tds</span>(<span class="ruby-identifier">row</span>) <span class="ruby-operator">:</span> <span class="ruby-identifier">row</span>.<span class="ruby-identifier">to_s</span>) <span class="ruby-operator">+</span> <span class="ruby-value str">&quot;&lt;/tr&gt;\n&quot;</span>
+206:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="trs-method" class="method-detail ">
+				<a name="M000027"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">trs</span><span
+						class="method-args">(rows)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Return:
+</p>
+<pre>
+  &lt;tr&gt;
+  &lt;td&gt;row[0][0]&lt;/td&gt;
+  &lt;td&gt;row[0][1]&lt;/td&gt;
+  &lt;td&gt;row[0][2]&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+  &lt;td&gt;row[1][0]&lt;/td&gt;
+  &lt;td&gt;row[1][1]&lt;/td&gt;
+  &lt;td&gt;row[1][2]&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+  &lt;td&gt;row[2][0]&lt;/td&gt;
+  &lt;td&gt;row[2][1]&lt;/td&gt;
+  &lt;td&gt;row[2][2]&lt;/td&gt;
+  &lt;/tr&gt;
+</pre>
+					
+
+					
+					<div class="method-source-code"
+						id="trs-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/webget_ruby_html.rb, line 226</span>
+226:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">trs</span>(<span class="ruby-identifier">rows</span>)
+227:     <span class="ruby-identifier">rows</span>.<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">x</span><span class="ruby-operator">|</span> <span class="ruby-identifier">tr</span>(<span class="ruby-identifier">x</span>)}.<span class="ruby-identifier">join</span>
+228:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="ul-method" class="method-detail ">
+				<a name="M000031"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">ul</span><span
+						class="method-args">(list)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Return:
+</p>
+<pre>
+  &lt;ul&gt;
+  list
+  &lt;/ul&gt;
+</pre>
+<p>
+Return when list is enumerable:
+</p>
+<pre>
+  &lt;ul&gt;
+  &lt;li&gt;list[1]&lt;/li&gt;
+  &lt;li&gt;list[2]&lt;/li&gt;
+  &lt;li&gt;list[3]&lt;/li&gt;
+  &lt;/ul&gt;
+</pre>
+					
+
+					
+					<div class="method-source-code"
+						id="ul-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/webget_ruby_html.rb, line 274</span>
+274:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">ul</span>(<span class="ruby-identifier">list</span>)
+275:     <span class="ruby-value str">&quot;&lt;ul&gt;\n&quot;</span> <span class="ruby-operator">+</span> (<span class="ruby-identifier">list</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">String</span>) <span class="ruby-operator">?</span> <span class="ruby-identifier">list</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">list</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">Enumerable</span>) <span class="ruby-operator">?</span> <span class="ruby-identifier">lis</span>(<span class="ruby-identifier">list</span>) <span class="ruby-operator">:</span> <span class="ruby-identifier">list</span>.<span class="ruby-identifier">to_s</span>) <span class="ruby-operator">+</span> <span class="ruby-value str">&quot;&lt;/ul&gt;\n&quot;</span>
+276:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="uls-method" class="method-detail ">
+				<a name="M000032"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">uls</span><span
+						class="method-args">(lists)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Return:
+</p>
+<pre>
+  &lt;ul&gt;
+  &lt;li&gt;list[0][1]&lt;/li&gt;
+  &lt;li&gt;list[0][2]&lt;/li&gt;
+  &lt;li&gt;list[0][3]&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;ul&gt;
+  &lt;li&gt;list[1][1]&lt;/li&gt;
+  &lt;li&gt;list[1][2]&lt;/li&gt;
+  &lt;li&gt;list[1][3]&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;ul&gt;
+  &lt;li&gt;list[2][1]&lt;/li&gt;
+  &lt;li&gt;list[2][2]&lt;/li&gt;
+  &lt;li&gt;list[2][3]&lt;/li&gt;
+  &lt;/ul&gt;
+</pre>
+					
+
+					
+					<div class="method-source-code"
+						id="uls-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/webget_ruby_html.rb, line 296</span>
+296:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">uls</span>(<span class="ruby-identifier">lists</span>)
+297:    <span class="ruby-identifier">lists</span>.<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">x</span><span class="ruby-operator">|</span> <span class="ruby-identifier">ul</span>(<span class="ruby-identifier">x</span>)}.<span class="ruby-identifier">join</span>
+298:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="wrap-method" class="method-detail ">
+				<a name="M000002"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">wrap</span><span
+						class="method-args">(text,tag)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Return the text wrapped in a tag pair.
+</p>
+<h2>Example</h2>
+<pre>
+  wrap('foo','&lt;bar&gt;') =&gt; &quot;&lt;bar&gt;foo&lt;/bar&gt;&quot;
+</pre>
+<h2>Example: you can omit the tag angle brackets</h2>
+<pre>
+  wrap('foo','bar') =&gt; &quot;&lt;bar&gt;foo&lt;/bar&gt;&quot;
+</pre>
+<h2>Example: you can use arbitrary tag attributes</h2>
+<pre>
+  wrap('foo','&lt;bar x=&quot;1&quot; y=&quot;2&quot;&gt;') =&gt; &quot;&lt;bar x=1 y=2&gt;foo&lt;/bar&gt;&quot;
+</pre>
+					
+
+					
+					<div class="method-source-code"
+						id="wrap-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/webget_ruby_html.rb, line 42</span>
+42:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">wrap</span>(<span class="ruby-identifier">text</span>,<span class="ruby-identifier">tag</span>)
+43:     <span class="ruby-identifier">t</span>=<span class="ruby-identifier">tag</span>
+44:     <span class="ruby-identifier">t</span>.<span class="ruby-identifier">sub!</span>(<span class="ruby-regexp re">/^&lt;/</span>,<span class="ruby-value str">''</span>)
+45:     <span class="ruby-identifier">t</span>.<span class="ruby-identifier">sub!</span>(<span class="ruby-regexp re">/&gt;$/</span>,<span class="ruby-value str">''</span>)
+46:     <span class="ruby-identifier">open</span>=<span class="ruby-identifier">t</span>
+47:     <span class="ruby-identifier">shut</span>=<span class="ruby-identifier">t</span>.<span class="ruby-identifier">split</span>.<span class="ruby-identifier">first</span>
+48:     <span class="ruby-node">&quot;&lt;#{open}&gt;#{text}&lt;/#{shut}&gt;&quot;</span>
+49:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+		</div>
+	
+		<div id="protected-instance-method-details" class="method-section section">
+			<h3 class="section-header">Protected Instance Methods</h3>
+
+		
+			<div id="attrs-to-string-method" class="method-detail ">
+				<a name="M000035"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">attrs_to_string</span><span
+						class="method-args">(ops,keys=nil)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+There&#8217;s likely a better more-standard way to do this.
+</p>
+<p>
+This method is only used by the <a href="HTML.html#M000006">table</a>
+method.
+</p>
+<p>
+Return a string of the attributes suitable for <a href="HTML.html">HTML</a>
+</p>
+<h2>Example</h2>
+<pre>
+  hash={:foo'=&gt;'bar',:goo'=&gt;'car',;hoo=&gt;'dar'}
+  attrs(hash) =&gt; ' foo=&quot;bar&quot; goo=&quot;car&quot; hoo=&quot;dar&quot;'
+</pre>
+<h2>Example with selected keys</h2>
+<pre>
+  hash={:foo'=&gt;'bar',:goo'=&gt;'car',;hoo=&gt;'dar'}
+  attrs(hash,[:foo,:hoo]) =&gt; ' foo=&quot;bar&quot; hoo=&quot;dar&quot;'
+</pre>
+					
+
+					
+					<div class="method-source-code"
+						id="attrs-to-string-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/webget_ruby_html.rb, line 336</span>
+336:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">attrs_to_string</span>(<span class="ruby-identifier">ops</span>,<span class="ruby-identifier">keys</span>=<span class="ruby-keyword kw">nil</span>)
+337:    <span class="ruby-keyword kw">return</span> <span class="ruby-value str">''</span> <span class="ruby-keyword kw">if</span> <span class="ruby-operator">!</span><span class="ruby-identifier">ops</span> <span class="ruby-keyword kw">or</span> <span class="ruby-identifier">ops</span><span class="ruby-operator">==</span>{}
+338:    <span class="ruby-identifier">keys</span><span class="ruby-operator">||=</span><span class="ruby-identifier">ops</span>.<span class="ruby-identifier">keys</span>
+339:    <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">keys</span>.<span class="ruby-identifier">inject</span>(<span class="ruby-value str">''</span>){<span class="ruby-operator">|</span><span class="ruby-identifier">s</span>,<span class="ruby-identifier">k</span><span class="ruby-operator">|</span> <span class="ruby-identifier">s</span> = (<span class="ruby-identifier">ops</span>[<span class="ruby-identifier">k</span>] <span class="ruby-operator">?</span> <span class="ruby-identifier">s</span><span class="ruby-operator">+=</span><span class="ruby-node">&quot; #{k}=\&quot;#{ops[k]}\&quot;&quot;</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">s</span>)}
+340:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+		</div>
+	
+
+	</div>
+
+
+	<div id="rdoc-debugging-section-dump" class="debugging-section">
+	
+		<p>Disabled; run with --debug to generate this.</p>
+	
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+
+</body>
+</html>
+

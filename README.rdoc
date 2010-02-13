@@ -1,5 +1,5 @@
 
-= WebGet.com Ruby HTML helpers for tables, lists, etc.
+= WebGet Ruby Gem: HTML helpers for tables, lists, etc.
 
 Author:: Joel Parker Henderson, joelparkerhenderson@gmail.com
 Copyright:: Copyright (c) 2006-2010 Joel Parker Henderson
