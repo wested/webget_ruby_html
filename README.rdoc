@@ -6,10 +6,10 @@ Copyright:: Copyright (c) 2006-2010 Joel Parker Henderson
 License:: CreativeCommons License, Non-commercial Share Alike
 License:: LGPL, GNU Lesser General Public License
 
-==Changes
+== Changes
 
-1.0.6 add to gemcutter
-1.0.5 comment & wrap
-1.0.4 tables
-1.0.0 lists
+* 1.0.6 add to gemcutter
+* 1.0.5 comment & wrap
+* 1.0.4 tables
+* 1.0.0 lists
 
