@@ -60,8 +60,8 @@ module HTML
   # ==Example
   #   headers = ['a','b','c']
   #   footers = ['x','y','z']
-  #   rows=[['d','e,'f'],['g','h,'i'],['j','k','l']
-  #   table(:id=>'foo', :class=>'bar', :headers=>headers, :footers=>footers, :rows=>rows
+  #   rows=[['d','e,'f'],['g','h,'i'],['j','k','l']]
+  #   table(:id=>'foo', :class=>'bar', :headers=>headers, :footers=>footers, :rows=>rows)
   #
   # ==Return HTML
   #   <table id="foo" class="bar">
