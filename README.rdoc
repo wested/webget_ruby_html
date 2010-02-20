@@ -6,6 +6,7 @@ Copyright:: Copyright (c) 2006-2010 Joel Parker Henderson
 License:: CreativeCommons License, Non-commercial Share Alike
 License:: LGPL, GNU Lesser General Public License
 
+
 == Public Methods
 
 * comment - Return the text wrapped in a comment: comment('testing') returns the string <!-- testing -->
