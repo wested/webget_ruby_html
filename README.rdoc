@@ -9,7 +9,7 @@ License:: LGPL, GNU Lesser General Public License
 == Table Methods
 
 * table - Builds an HTML table from the supplied parameters: string CSS: ID, Class; array of strings: Headers, Footers; array of array of string: Rows
-* tables - Builds one or more HTML tables from a supplied array of arrays (each array holding the params specified for the table method)
+* tables - Builds one or more HTML tables from a supplied array of arrays (each sub-array holding the params specified for the table method)
 * thead - Builds the thead section of a table from an array of strings
 * th - Returns a TH table cell
 * ths - Returns a string of TH table cells
