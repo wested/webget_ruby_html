@@ -8,8 +8,8 @@ License:: LGPL, GNU Lesser General Public License
 
 == Public Methods
 
-* comment - Return the text wrapped in a comment: comment('testing') returns the string <!-- testing -->
-* wrap - Return the text wrapped in a tag pair: wrap('span', 'my name') returns the string <span>my name</span>
+* comment - Return the text wrapped in a comment: comment('testing') returns the string
+* wrap - Return the text wrapped in a tag pair: wrap('span', 'my name') returns the string
 * tables 
 * table
 * thead
