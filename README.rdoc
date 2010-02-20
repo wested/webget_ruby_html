@@ -20,6 +20,11 @@ License:: LGPL, GNU Lesser General Public License
 * tds - Returns a string of TD table cells
 * tfoot - Builds the tfoot section of a table from an array of strings
 
+Examples:
+  headers = ['a','b','c']
+  footers = ['x','y','z']
+  rows=[['d','e,'f'],['g','h,'i'],['j','k','l']
+  HTML.table(:id=>'foo', :class=>'bar', :headers=>headers, :footers=>footers, :rows=>rows)
 
 == List Methods
 
