@@ -62,6 +62,10 @@ Example:
   ul(['a','b','c'])
   =>
   <ul><li>a</li><li>b</li><li>c</li></ul>
+  
+  uls(['a','b','c'],['d','e','f'],[1,2,3])
+  =>
+  <ul><li>a</li><li>b</li><li>c</li></ul><ul><li>d</li><li>e</li><li>f</li></ul><ul><li>1</li><li>2</li><li>3</li></ul>
 
 ==  Misc Methods
 
