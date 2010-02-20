@@ -26,8 +26,7 @@ Examples:
   rows=[['d','e,'f']]
   HTML.table(:id=>'foo', :class=>'bar', :headers=>headers, :footers=>footers, :rows=>rows)
     =>
-  <pre>
-  <table id="foo" class="bar">
+  '<table id="foo" class="bar">
   <thead>
   <tr>
   <th>a</th>
@@ -50,8 +49,8 @@ Examples:
   <th>z</th>
   </tr>
   </tfoot>
-  </table>
-  </pre>
+  </table>'
+
 
 == List Methods
 
