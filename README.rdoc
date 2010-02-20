@@ -26,32 +26,32 @@ Examples:
   rows=[['d','e,'f']]
   HTML.table(:id=>'foo', :class=>'bar', :headers=>headers, :footers=>footers, :rows=>rows)
     =>
-<pre>
-<table id="foo" class="bar">
-<thead>
-<tr>
-<th>a</th>
-<th>b</th>
-<th>c</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>d</td>
-<td>e</td>
-<td>f</td>
-</tr>
-</tbody>
-<tfoot>
-<tr>
-<th>
-<th>x</th>
-<th>y</th>
-<th>z</th>
-</tr>
-</tfoot>
-</table>
-</pre>
+  <pre>
+  <table id="foo" class="bar">
+  <thead>
+  <tr>
+  <th>a</th>
+  <th>b</th>
+  <th>c</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>d</td>
+  <td>e</td>
+  <td>f</td>
+  </tr>
+  </tbody>
+  <tfoot>
+  <tr>
+  <th>
+  <th>x</th>
+  <th>y</th>
+  <th>z</th>
+  </tr>
+  </tfoot>
+  </table>
+  </pre>
 
 == List Methods
 
