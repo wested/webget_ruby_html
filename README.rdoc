@@ -24,8 +24,8 @@ Examples:
   headers = ['a','b','c']
   footers = ['x','y','z']
   rows=[['d','e,'f']]
-  HTML.table(:id=>'foo', :class=>'bar', :headers=>headers, :footers=>footers, :rows=>rows)
-    =>
+  table(:id=>'foo', :class=>'bar', :headers=>headers, :footers=>footers, :rows=>rows)
+  =>
   <table id="foo" class="bar">
   <thead>
   <tr>
@@ -58,20 +58,24 @@ Examples:
 * li - Returns an LI item
 * lis - Returns a string of LI items
 
-Example:
-  ul(['a','b','c'])
-  =>
+Examples:
+  ul(['a','b','c']) =>
   <ul><li>a</li><li>b</li><li>c</li></ul>
   
-  uls(['a','b','c'],['d','e','f'],[1,2,3])
-  =>
+  uls(['a','b','c'],['d','e','f'],[1,2,3]) =>
   <ul><li>a</li><li>b</li><li>c</li></ul><ul><li>d</li><li>e</li><li>f</li></ul><ul><li>1</li><li>2</li><li>3</li></ul>
 
 ==  Misc Methods
 
-* comment - Return the text wrapped in an HTML comment
-* wrap - Return the text wrapped in a tag pair
+* comment - Return the text parameter wrapped in an HTML comment
+* wrap - Return the text parameter wrapped in a tag pair
 
+Examples:
+  comment('the following comes from') =>
+  <!-- the following comes from -->
+  
+  wrap('foo', 'bar') =>
+  <bar>foo</bar>
 
 == Changes
 
