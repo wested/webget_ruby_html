@@ -43,7 +43,6 @@ Examples:
   </tbody>
   <tfoot>
   <tr>
-  <th>
   <th>x</th>
   <th>y</th>
   <th>z</th>
@@ -58,6 +57,11 @@ Examples:
 * uls - Builds one or more HTML unordered lists from an array of arrays of strings or Enumerables (sub-arrays can be a mix of both)
 * li - Returns an LI item
 * lis - Returns a string of LI items
+
+Example:
+  ul(['a','b','c'])
+  =>
+  <ul><li>a</li><li>b</li><li>c</li></ul>
 
 ==  Misc Methods
 

@@ -91,7 +91,6 @@ module HTML
   #   </tbody>
   #   <tfoot>
   #   <tr>
-  #   <th>
   #   <th>x</th>
   #   <th>y</th>
   #   <th>z</th>
