@@ -1,33 +1,18 @@
 =begin rdoc
 
-== Public Methods
+= WebGet Ruby Gem: HTML helpers for tables, lists, etc.
 
-* comment - Return the text wrapped in a comment: comment('testing') returns the string <!-- testing -->
-* wrap - Return the text wrapped in a tag pair: wrap('span', 'my name') returns the string <span>my name</span>
-* tables 
-* table
-* thead
-* th
-* ths
-* tbody
-* tr
-* trs
-* td
-* tds
-* tfoot
-* ul
-* uls
-* li
-* lis
+Author:: Joel Parker Henderson, joelparkerhenderson@gmail.com
+Copyright:: Copyright (c) 2006-2010 Joel Parker Henderson
+License:: CreativeCommons License, Non-commercial Share Alike
+License:: LGPL, GNU Lesser General Public License
 
+==Changes
 
-== Changes
-
-* 1.0.6 add to gemcutter
-* 1.0.5 comment & wrap
-* 1.0.4 tables
-* 1.0.0 lists
-
+1.0.6 add to gemcutter
+1.0.5 comment & wrap
+1.0.4 tables
+1.0.0 lists
 
 =end
 
