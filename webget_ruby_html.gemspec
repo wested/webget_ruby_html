@@ -1,8 +1,15 @@
 Gem::Specification.new do |s|
 
-  s.name              = "webget_ruby_html"
+  NAME		      = 'webget_ruby_html'
+  CLASSES             = ['lists','misc','tables']
+  MAIN_FILES          = ["lib/#{NAME}.rb"] + CLASSES.map{|c| "lib/#{NAME}/#{c}.rb"}
+  TEST_FILES          = ["test/#{NAME}.rb"] + CLASSES.map{|c| "test/#{NAME}/#{c}_test.rb"}
+  DATA_FILES          = []
+  HELP_FILES	      = ['README.rdoc','LICENSE.txt']
+
+  s.name              = NAME
   s.summary           = "WebGet Ruby Gem: HTML helpers for tables, headers, rows, cells, lists, etc."
-  s.version           = "1.0.6"
+  s.version           = "1.1.0"
   s.author            = "WebGet"
   s.email             = "webget@webget.com"
   s.homepage          = "http://webget.com/"
@@ -12,7 +19,7 @@ Gem::Specification.new do |s|
   s.platform          = Gem::Platform::RUBY
   s.require_path      = 'lib'
   s.has_rdoc          = true
-  s.files             = ['README.rdoc','LICENSE.txt','lib/webget_ruby_html.rb']
-  s.test_files        = ['test/webget_ruby_html_test.rb']
+  s.files             = HELP_FILES + MAIN_FILES + TEST_FILES + DATA_FILES
+  s.test_files        = TEST_FILES + DATA_FILES
 
 end
