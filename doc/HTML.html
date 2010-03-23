@@ -1,332 +1,913 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
-	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+  <head>
+    <meta name="Content-Type" content="text/html; charset=UTF-8" />
+<title>Module: HTML</title>
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8" />
+<link rel="stylesheet" href="css/common.css" type="text/css" media="screen" charset="utf-8" />
 
-	<title>Module: HTML</title>
+<script type="text/javascript" charset="utf-8">
+  relpath = '';
+  if (relpath != '') relpath += '/';
+</script>
+<script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/app.js"></script>
 
-	<link rel="stylesheet" href="./rdoc.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="css/pygments.css" type="text/css" media="screen" charset="utf-8" />
 
-	<script src="./js/jquery.js" type="text/javascript"
-		charset="utf-8"></script>
-	<script src="./js/thickbox-compressed.js" type="text/javascript"
-		charset="utf-8"></script>
-	<script src="./js/quicksearch.js" type="text/javascript"
-		charset="utf-8"></script>
-	<script src="./js/darkfish.js" type="text/javascript"
-		charset="utf-8"></script>
+  </head>
+  <body>
+    <script type="text/javascript" charset="utf-8">
+      if (window.top.frames.main) document.body.className = 'frames';
+    </script>
+    
+    <div id="header">
+      <div id="menu">
+  
+    <a href="_index.html">Index (H)</a> &raquo; 
+    
+    
+    <span class="title">HTML</span>
+  
+  
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
 
-</head>
-<body class="module">
+      <div id="search">
+  <a id="class_list_link" href="#">Class List</a>
+  <a id="method_list_link" href="#">Method List</a>
+  <a id ="file_list_link" href="#">File List</a>
+</div>
 
-	<div id="metadata">
-		<div id="file-metadata">
-			<div id="file-list-section" class="section">
-				<h3 class="section-header">In Files</h3>
-				<div class="section-body">
-					<ul>
-					
-						<li><a href="./lib/webget_ruby_html_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
-							class="thickbox" title="lib/webget_ruby_html.rb">lib/webget_ruby_html.rb</a></li>
-					
-					</ul>
-				</div>
-			</div>
+      <div class="clear"></div>
+    </div>
+    
+    <iframe id="search_frame"></iframe>
+    
+    <div id="content"><h1>Module: HTML 
+  
+  
+</h1>
 
-			
-		</div>
+<dl class="box">
+  
+  
+    
+  
+    
+  
+  
+    <dt class="r1 last">Defined in:</dt>
+    <dd class="r1 last">lib/webget_ruby_html/misc.rb<span class="defines">,<br />
+  lib/webget_ruby_html/lists.rb,<br /> lib/webget_ruby_html/tables.rb</span>
+</dd>
+  
+</dl>
+<div class="clear"></div>
 
-		<div id="class-metadata">
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    <p>
+WebGet Ruby Gem: HTML helpers for tables, lists, etc.
+</p>
 
-			<!-- Parent Class -->
-			
 
-			<!-- Namespace Contents -->
-			
+  </div>
+</div>
+<div class="tags">
+  
+</div>
 
-			<!-- Method Quickref -->
-			
-			<div id="method-list-section" class="section">
-				<h3 class="section-header">Methods</h3>
-				<ul class="link-list">
-					
-					<li><a href="#M000035">#attrs_to_string</a></li>
-					
-					<li><a href="#M000000">#comment</a></li>
-					
-					<li><a href="#M000033">#li</a></li>
-					
-					<li><a href="#M000034">#lis</a></li>
-					
-					<li><a href="#M000005">#table</a></li>
-					
-					<li><a href="#M000010">#tables</a></li>
-					
-					<li><a href="#M000024">#tbody</a></li>
-					
-					<li><a href="#M000028">#td</a></li>
-					
-					<li><a href="#M000029">#tds</a></li>
-					
-					<li><a href="#M000030">#tfoot</a></li>
-					
-					<li><a href="#M000016">#th</a></li>
-					
-					<li><a href="#M000015">#thead</a></li>
-					
-					<li><a href="#M000023">#ths</a></li>
-					
-					<li><a href="#M000026">#tr</a></li>
-					
-					<li><a href="#M000027">#trs</a></li>
-					
-					<li><a href="#M000031">#ul</a></li>
-					
-					<li><a href="#M000032">#uls</a></li>
-					
-					<li><a href="#M000001">#wrap</a></li>
-					
-				</ul>
-			</div>
-			
 
-			<!-- Included Modules -->
-			
-		</div>
+  <h2>Instance Method Summary</h2>
 
-		<div id="project-metadata">
-			
-			
-			<div id="fileindex-section" class="section project-section">
-				<h3 class="section-header">Files</h3>
-				<ul>
-				
-					<li class="file"><a href="./LICENSE_txt.html">LICENSE.txt</a></li>
-				
-					<li class="file"><a href="./README_rdoc.html">README.rdoc</a></li>
-				
-					<li class="file"><a href="./webget_ruby_html_gemspec.html">webget_ruby_html.gemspec</a></li>
-				
-					<li class="file"><a href="./webget_ruby_html_sha512_txt.html">webget_ruby_html.sha512.txt</a></li>
-				
-				</ul>
-			</div>
-			
+  <ul class="summary">
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#attrs_to_string-instance_method" title="#attrs_to_string (instance method)">- (String) <strong>attrs_to_string</strong>(ops, keys = nil) </a>
+    
 
-			<div id="classindex-section" class="section project-section">
-				<h3 class="section-header">Class Index
-					<span class="search-toggle"><img src="./images/find.png"
-						height="16" width="16" alt="[+]"
-						title="show/hide quicksearch" /></span></h3>
-				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
-				<fieldset>
-					<legend>Quicksearch</legend>
-					<input type="text" name="quicksearch" value=""
-						class="quicksearch-field" />
-				</fieldset>
-				</form>
+    
+  </span>
+  
+  
+  
+  
+  
 
-				<ul class="link-list">
-				
-					<li><a href="./HTML.html">HTML</a></li>
-				
-					<li><a href="./Testing.html">Testing</a></li>
-				
-				</ul>
-				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
-			</div>
+  
+    <span class="summary_desc">
+Builds a string of attributes suitable for HTML.
 
-			
-		</div>
-	</div>
+</span>
+  
+</li>
 
-	<div id="documentation">
-		<h1 class="module">HTML</h1>
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#comment-instance_method" title="#comment (instance method)">- (String) <strong>comment</strong>(text) </a>
+    
 
-		<div id="description">
-			<h1>WebGet Ruby Gem: <a href="HTML.html">HTML</a> helpers for tables, lists, etc.</h1>
-<table>
-<tr><td valign="top">Author:</td><td>Joel Parker Henderson, joelparkerhenderson@gmail.com
+    
+  </span>
+  
+  
+  
+  
+  
 
-</td></tr>
-<tr><td valign="top">Copyright:</td><td>Copyright &#169; 2006-2010 Joel Parker Henderson
+  
+    <span class="summary_desc">
+Return the text wrapped in an HTML comment tag.
 
-</td></tr>
-<tr><td valign="top">License:</td><td>CreativeCommons License, Non-commercial Share Alike
+</span>
+  
+</li>
 
-</td></tr>
-<tr><td valign="top">License:</td><td>LGPL, GNU Lesser General Public License
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#li-instance_method" title="#li (instance method)">- (String) <strong>li</strong>(item) </a>
+    
 
-</td></tr>
-</table>
-<h2>Changes</h2>
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc">
+Wrap item in <em>li</em> tags.
+
+</span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#lis-instance_method" title="#lis (instance method)">- (String) <strong>lis</strong>(items) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc">
+Wrap each item in a list in <em>li</em> tags.
+
+</span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#table-instance_method" title="#table (instance method)">- (String) <strong>table</strong>(ops = {}) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc">
+Processes parameters into a complete HTML table.
+
+</span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#tables-instance_method" title="#tables (instance method)">- (String) <strong>tables</strong>(ops = {}) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc">
+Concatenated string of HTML tables.
+
+</span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#tbody-instance_method" title="#tbody (instance method)">- (String) <strong>tbody</strong>(rows) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc">
+Returns the <em>tbody</em> element of a table.
+
+</span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#td-instance_method" title="#td (instance method)">- (String) <strong>td</strong>(cell) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc">
+Returns a single <em>td</em> cell.
+
+</span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#tds-instance_method" title="#tds (instance method)">- (String) <strong>tds</strong>(cells) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc">
+Returns a concatenated string of <em>td</em> cells.
+
+</span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#tfoot-instance_method" title="#tfoot (instance method)">- (String) <strong>tfoot</strong>(footers) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc">
+Returns the <em>tfoot</em> row for a table.
+
+</span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#th-instance_method" title="#th (instance method)">- (String) <strong>th</strong>(header) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc">
+Returns a single <em>th</em> cell.
+
+</span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#thead-instance_method" title="#thead (instance method)">- (String) <strong>thead</strong>(headers) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc">
+Returns the <em>thead</em> row for a table.
+
+</span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#ths-instance_method" title="#ths (instance method)">- (String) <strong>ths</strong>(headers) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc">
+Returns a string of <em>th</em> cells.
+
+</span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#tr-instance_method" title="#tr (instance method)">- (String) <strong>tr</strong>(row) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc">
+Returns a single table row.
+
+</span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#trs-instance_method" title="#trs (instance method)">- (String) <strong>trs</strong>(rows) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc">
+Returns a string of table rows.
+
+</span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#ul-instance_method" title="#ul (instance method)">- (String) <strong>ul</strong>(list) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc">
+Wrap each item in passed arrays of stringifiable items as a list, each item
+in <em>li</em> tags, the whole list in <em>ul</em> tags.
+
+</span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#uls-instance_method" title="#uls (instance method)">- (String) <strong>uls</strong>(lists) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc">
+Wrap each item in passed array of arrays of stringifiable items as a list,
+each item in <em>li</em> tags, each sub-array in <em>ul</em> tags.
+
+</span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#wrap-instance_method" title="#wrap (instance method)">- (String) <strong>wrap</strong>(text, tag) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc">
+Return the text wrapped in a tag pair.
+
+</span>
+  
+</li>
+
+    
+  </ul>
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+    
+    
+      <div class="method_details first">
+  <p class="signature first" id="attrs_to_string-instance_method">
+  
+    - (<tt>String</tt>) <strong>attrs_to_string</strong>(ops, keys = nil) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Builds a string of attributes suitable for HTML
+</p>
 <p>
-1.0.6 add to gemcutter 1.0.5 comment &amp; wrap 1.0.4 tables 1.0.0 lists
+There&#8217;s likely a better more-standard way to do this. (Method is only
+used by the #table method.)
 </p>
 
-		</div>
 
-		<!-- Constants -->
-		
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <h3>Examples:</h3>
+    
+      <h4></h4>
+      <pre class="example code">With all keys:
+  hash={:foo'=&gt;'bar',:goo'=&gt;'car',;hoo=&gt;'dar'}
+  attrs(hash) =&gt; ' foo=&quot;bar&quot; goo=&quot;car&quot; hoo=&quot;dar&quot;'</pre>
+    
+      <h4></h4>
+      <pre class="example code">With selected keys:
+  hash={:foo'=&gt;'bar',:goo'=&gt;'car',;hoo=&gt;'dar'}
+  attrs(hash,[:foo,:hoo]) =&gt; ' foo=&quot;bar&quot; hoo=&quot;dar&quot;'</pre>
+    
+  </div>
 
-		<!-- Attributes -->
-		
+  
+    
+    
+    
+    
+    <h3>Options Hash (<tt>keys</tt>):</h3>
+    <ul class="option">
+      
+        <li>
+          <span class="type">(<tt>Array</tt>)</span>
+          <span class="name">select</span>
+          <span class="default">
+            
+              <span class="na">N/A</span>
+            
+          </span>
+          &mdash;
+only certain attributes to use in generated string
 
-		<!-- Methods -->
-		
-		<div id="public-instance-method-details" class="method-section section">
-			<h3 class="section-header">Public Instance Methods</h3>
 
-		
-			<div id="comment-method" class="method-detail ">
-				<a name="M000000"></a>
+        </tr>
+      
+    </ul>
+  
+<h3>Returns:</h3>
+<ul class="return">
+  
+    <li>
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+      
+        &mdash;
+        
+attributes suitable for HTML
 
-				<div class="method-heading">
-				
-					<span class="method-name">comment</span><span
-						class="method-args">(text)</span>
-					<span class="method-click-advice">click to toggle source</span>
-				
-				</div>
 
-				<div class="method-description">
-					
-					<p>
-Return the text wrapped in a comment.
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+58
+59
+60
+61
+62</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/webget_ruby_html/misc.rb', line 58</span>
+
+<span class='kw'>def</span> <span class='id attrs_to_string'>attrs_to_string</span><span class='lparen'>(</span><span class='id ops'>ops</span><span class='comma'>,</span><span class='id keys'>keys</span><span class='op'>=</span><span class='kw'>nil</span><span class='rparen'>)</span>
+ <span class='kw'>return</span> <span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_end'>'</span></span> <span class='kw'>if</span> <span class='op'>!</span><span class='id ops'>ops</span> <span class='kw'>or</span> <span class='id ops'>ops</span><span class='op'>==</span><span class='lbrace'>{</span><span class='rbrace'>}</span>
+ <span class='id keys'>keys</span><span class='op'>||=</span><span class='id ops'>ops</span><span class='period'>.</span><span class='id keys'>keys</span>
+ <span class='kw'>return</span> <span class='id keys'>keys</span><span class='period'>.</span><span class='id inject'>inject</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_end'>'</span></span><span class='rparen'>)</span><span class='lbrace'>{</span><span class='op'>|</span><span class='id s'>s</span><span class='comma'>,</span><span class='id k'>k</span><span class='op'>|</span> <span class='id s'>s</span> <span class='op'>=</span> <span class='lparen'>(</span><span class='id ops'>ops</span><span class='lbracket'>[</span><span class='id k'>k</span><span class='rbracket'>]</span> <span class='op'>?</span> <span class='id s'>s</span><span class='op'>+=</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'> </span><span class='embexpr_beg'>#{</span><span class='id k'>k</span><span class='rbrace'>}</span><span class='tstring_content'>=\&quot;</span><span class='embexpr_beg'>#{</span><span class='id ops'>ops</span><span class='lbracket'>[</span><span class='id k'>k</span><span class='rbracket'>]</span><span class='rbrace'>}</span><span class='tstring_content'>\&quot;</span><span class='tstring_end'>&quot;</span></span> <span class='op'>:</span> <span class='id s'>s</span><span class='rparen'>)</span><span class='rbrace'>}</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="comment-instance_method">
+  
+    - (<tt>String</tt>) <strong>comment</strong>(text) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Return the text wrapped in an HTML comment tag.
 </p>
-<h2>Example</h2>
-<pre>
-  comment('foo') =&gt; &quot;&lt;!--foo--&gt;&quot;
-</pre>
-					
 
-					
-					<div class="method-source-code"
-						id="comment-source">
-<pre>
-    <span class="ruby-comment cmt"># File lib/webget_ruby_html.rb, line 26</span>
-26:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">comment</span>(<span class="ruby-identifier">text</span>)
-27:     <span class="ruby-node">&quot;&lt;!--#{text}--&gt;&quot;</span>
-28:   <span class="ruby-keyword kw">end</span></pre>
-					</div>
-					
-				</div>
 
-				
-			</div>
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <h3>Examples:</h3>
+    
+      <h4></h4>
+      <pre class="example code">  comment('foo') =&gt; &quot;&lt;!--foo--&gt;&quot;</pre>
+    
+  </div>
+<h3>Parameters:</h3>
+<ul class="param">
+  
+    <li>
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+        <span class='name'>text</span>
+      
+      
+      
+        &mdash;
+        
+to be wrapped
 
-		
-			<div id="li-method" class="method-detail ">
-				<a name="M000033"></a>
 
-				<div class="method-heading">
-				
-					<span class="method-name">li</span><span
-						class="method-args">(item)</span>
-					<span class="method-click-advice">click to toggle source</span>
-				
-				</div>
+      
+    </li>
+  
+</ul>
+<h3>Returns:</h3>
+<ul class="return">
+  
+    <li>
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+      
+        &mdash;
+        
+text wrapped in an HTML comment tag
 
-				<div class="method-description">
-					
-					<p>
-Return:
+
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+11
+12
+13</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/webget_ruby_html/misc.rb', line 11</span>
+
+<span class='kw'>def</span> <span class='id comment'>comment</span><span class='lparen'>(</span><span class='id text'>text</span><span class='rparen'>)</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>&lt;!--</span><span class='embexpr_beg'>#{</span><span class='id text'>text</span><span class='rbrace'>}</span><span class='tstring_content'>--&gt;</span><span class='tstring_end'>&quot;</span></span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="li-instance_method">
+  
+    - (<tt>String</tt>) <strong>li</strong>(item) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Wrap item in <em>li</em> tags
 </p>
-<pre>
-  &lt;li&gt;item&lt;/li&gt;
-</pre>
-					
 
-					
-					<div class="method-source-code"
-						id="li-source">
-<pre>
-     <span class="ruby-comment cmt"># File lib/webget_ruby_html.rb, line 304</span>
-304:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">li</span>(<span class="ruby-identifier">item</span>)
-305:     <span class="ruby-value str">&quot;&lt;li&gt;&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">item</span>.<span class="ruby-identifier">to_s</span> <span class="ruby-operator">+</span> <span class="ruby-value str">&quot;&lt;/li&gt;\n&quot;</span>
-306:   <span class="ruby-keyword kw">end</span></pre>
-					</div>
-					
-				</div>
 
-				
-			</div>
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <h3>Examples:</h3>
+    
+      <h4></h4>
+      <pre class="example code">  li('item') =&gt; &lt;li&gt;item&lt;/li&gt;</pre>
+    
+  </div>
+<h3>Parameters:</h3>
+<ul class="param">
+  
+    <li>
+      
+        <span class='type'>(<tt>Object</tt>)</span>
+      
+      
+        <span class='name'>item,</span>
+      
+      
+      
+        &mdash;
+        
+can be any data type which implements to_s, to wrap
 
-		
-			<div id="lis-method" class="method-detail ">
-				<a name="M000034"></a>
 
-				<div class="method-heading">
-				
-					<span class="method-name">lis</span><span
-						class="method-args">(items)</span>
-					<span class="method-click-advice">click to toggle source</span>
-				
-				</div>
+      
+    </li>
+  
+</ul>
+<h3>Returns:</h3>
+<ul class="return">
+  
+    <li>
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+      
+        &mdash;
+        
+passed item wrapped in li tags
 
-				<div class="method-description">
-					
-					<p>
-Return:
+
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+62
+63
+64</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/webget_ruby_html/lists.rb', line 62</span>
+
+<span class='kw'>def</span> <span class='id li'>li</span><span class='lparen'>(</span><span class='id item'>item</span><span class='rparen'>)</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>&lt;li&gt;</span><span class='tstring_end'>&quot;</span></span> <span class='op'>+</span> <span class='id item'>item</span><span class='period'>.</span><span class='id to_s'>to_s</span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>&lt;/li&gt;\n</span><span class='tstring_end'>&quot;</span></span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="lis-instance_method">
+  
+    - (<tt>String</tt>) <strong>lis</strong>(items) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Wrap each item in a list in <em>li</em> tags
 </p>
-<pre>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <h3>Examples:</h3>
+    
+      <h4></h4>
+      <pre class="example code">  lis([1,2,3]) =&gt;
   &lt;li&gt;item[0]&lt;/li&gt;
   &lt;li&gt;item[1]&lt;/li&gt;
-  &lt;li&gt;item[2]&lt;/li&gt;
-</pre>
-					
+  &lt;li&gt;item[2]&lt;/li&gt;</pre>
+    
+  </div>
+<h3>Parameters:</h3>
+<ul class="param">
+  
+    <li>
+      
+        <span class='type'>(<tt>Array</tt>, <tt>Objects</tt>)</span>
+      
+      
+        <span class='name'>items,</span>
+      
+      
+      
+        &mdash;
+        
+can be any data type which implements to_s, to wrap
 
-					
-					<div class="method-source-code"
-						id="lis-source">
-<pre>
-     <span class="ruby-comment cmt"># File lib/webget_ruby_html.rb, line 314</span>
-314:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">lis</span>(<span class="ruby-identifier">items</span>)
-315:     <span class="ruby-identifier">items</span>.<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">x</span><span class="ruby-operator">|</span> <span class="ruby-identifier">li</span>(<span class="ruby-identifier">x</span>)}.<span class="ruby-identifier">join</span>
-316:   <span class="ruby-keyword kw">end</span></pre>
-					</div>
-					
-				</div>
 
-				
-			</div>
+      
+    </li>
+  
+</ul>
+<h3>Returns:</h3>
+<ul class="return">
+  
+    <li>
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+      
+        &mdash;
+        
+passed items wrapped in li tags and concatenated
 
-		
-			<div id="table-method" class="method-detail ">
-				<a name="M000005"></a>
 
-				<div class="method-heading">
-				
-					<span class="method-name">table</span><span
-						class="method-args">(ops={})</span>
-					<span class="method-click-advice">click to toggle source</span>
-				
-				</div>
+      
+    </li>
+  
+</ul>
 
-				<div class="method-description">
-					
-					<p>
-Options:
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+76
+77
+78</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/webget_ruby_html/lists.rb', line 76</span>
+
+<span class='kw'>def</span> <span class='id lis'>lis</span><span class='lparen'>(</span><span class='id items'>items</span><span class='rparen'>)</span>
+  <span class='id items'>items</span><span class='period'>.</span><span class='id map'>map</span><span class='lbrace'>{</span><span class='op'>|</span><span class='id x'>x</span><span class='op'>|</span> <span class='id li'>li</span><span class='lparen'>(</span><span class='id x'>x</span><span class='rparen'>)</span><span class='rbrace'>}</span><span class='period'>.</span><span class='id join'>join</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="table-instance_method">
+  
+    - (<tt>String</tt>) <strong>table</strong>(ops = {}) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Processes parameters into a complete HTML table
 </p>
-<pre>
-  :text : the complete text of the table, e.g. &lt;table&gt;text&lt;/table&gt;
-  :headers
-  :footers
-  :rows
-  :class is the table's css class, e.g. :class=&gt;'sortable'
-  :id is the table's css id, e.g. :id=&gt;'mytable'
-</pre>
-<h2>Example</h2>
-<pre>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <h3>Examples:</h3>
+    
+      <h4></h4>
+      <pre class="example code">Build a table with three data rows, each with three columns, plus a header and footer row,
+giving the table both an ID and class:
+
   headers = ['a','b','c']
   footers = ['x','y','z']
-  rows=[['d','e,'f'],['g','h,'i'],['j','k','l']
-  table(:id=&gt;'foo', :class=&gt;'bar', :headers=&gt;headers, :footers=&gt;footers, :rows=&gt;rows
-</pre>
-<h2>Return <a href="HTML.html">HTML</a></h2>
-<pre>
+  rows=[['d','e,'f'],['g','h,'i'],['j','k','l']]
+  table(:id=&gt;'foo', :class=&gt;'bar', :headers=&gt;headers, :footers=&gt;footers, :rows=&gt;rows)
+
+Gets this HTML
   &lt;table id=&quot;foo&quot; class=&quot;bar&quot;&gt;
   &lt;thead&gt;
   &lt;tr&gt;
@@ -354,550 +935,1246 @@ Options:
   &lt;/tbody&gt;
   &lt;tfoot&gt;
   &lt;tr&gt;
-  &lt;th&gt;
   &lt;th&gt;x&lt;/th&gt;
   &lt;th&gt;y&lt;/th&gt;
   &lt;th&gt;z&lt;/th&gt;
   &lt;/tr&gt;
   &lt;/tfoot&gt;
   &lt;/table&gt;
-</pre>
-<h2>Special cases</h2>
-<p>
-If headers or row or footers are nil, then this skips them.
+
+Special Cases
+
+If headers, row or footers are nil, then they're skipped.
+
+If footers==[] then this method will use a footers array
+with blanks that is the same length as the headers array.</pre>
+    
+  </div>
+<h3>Parameters:</h3>
+<ul class="param">
+  
+    <li>
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+        <span class='name'>text</span>
+      
+      
+      
+        &mdash;
+        
+the complete text of the table, e.g. <table>text</table>
+
+
+      
+    </li>
+  
+    <li>
+      
+        <span class='type'>(<tt>Array</tt>, <tt>String</tt>)</span>
+      
+      
+        <span class='name'>headers</span>
+      
+      
+      
+        &mdash;
+        
+builds the header row from this array
+
+
+      
+    </li>
+  
+    <li>
+      
+        <span class='type'>(<tt>Array</tt>, <tt>String</tt>)</span>
+      
+      
+        <span class='name'>footers</span>
+      
+      
+      
+        &mdash;
+        
+builds the footer row from this array
+
+
+      
+    </li>
+  
+    <li>
+      
+        <span class='type'>(<tt>Array</tt>, <tt>Array</tt>)</span>
+      
+      
+        <span class='name'>rows</span>
+      
+      
+      
+        &mdash;
+        
+builds the data rows from this array of arrays
+
+
+      
+    </li>
+  
+    <li>
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+        <span class='name'>class</span>
+      
+      
+      
+        &mdash;
+        
+is the table&#8217;s css class, e.g. :class=>&#8217;sortable&#8217;
+
+
+      
+    </li>
+  
+    <li>
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+        <span class='name'>id</span>
+      
+      
+      
+        &mdash;
+        
+is the table&#8217;s css id, e.g. :id=>&#8217;mytable&#8217;
+
+
+      
+    </li>
+  
+</ul>
+<h3>Returns:</h3>
+<ul class="return">
+  
+    <li>
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+      
+        &mdash;
+        
+complete HTML table
+
+
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/webget_ruby_html/tables.rb', line 64</span>
+
+<span class='kw'>def</span> <span class='id table'>table</span><span class='lparen'>(</span><span class='id ops'>ops</span><span class='op'>=</span><span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+  <span class='id text'>text</span><span class='op'>=</span><span class='id ops'>ops</span><span class='lbracket'>[</span><span class='symbol'>:text</span><span class='rbracket'>]</span>
+  <span class='kw'>if</span> <span class='op'>!</span><span class='id text'>text</span>
+   <span class='id headers'>headers</span><span class='op'>=</span><span class='id ops'>ops</span><span class='lbracket'>[</span><span class='symbol'>:headers</span><span class='rbracket'>]</span>
+   <span class='id footers'>footers</span><span class='op'>=</span><span class='lparen'>(</span><span class='kw'>defined?</span><span class='lparen'>(</span><span class='id ops'>ops</span><span class='lbracket'>[</span><span class='symbol'>:footers</span><span class='rbracket'>]</span><span class='rparen'>)</span> <span class='op'>?</span> <span class='lparen'>(</span><span class='lparen'>(</span><span class='id ops'>ops</span><span class='lbracket'>[</span><span class='symbol'>:footers</span><span class='rbracket'>]</span><span class='op'>==</span><span class='kw'>true</span><span class='rparen'>)</span> <span class='op'>?</span> <span class='const'>Array</span><span class='period'>.</span><span class='id new'>new</span><span class='lparen'>(</span><span class='id headers'>headers</span><span class='period'>.</span><span class='id size'>size</span><span class='comma'>,</span><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_end'>'</span></span><span class='rparen'>)</span> <span class='op'>:</span> <span class='id ops'>ops</span><span class='lbracket'>[</span><span class='symbol'>:footers</span><span class='rbracket'>]</span><span class='rparen'>)</span> <span class='op'>:</span> <span class='kw'>false</span><span class='rparen'>)</span>
+   <span class='id rows'>rows</span><span class='op'>=</span><span class='id ops'>ops</span><span class='lbracket'>[</span><span class='symbol'>:rows</span><span class='rbracket'>]</span>
+   <span class='id text'>text</span><span class='op'>=</span><span class='lparen'>(</span><span class='lparen'>(</span><span class='id headers'>headers</span> <span class='op'>?</span> <span class='id thead'>thead</span><span class='lparen'>(</span><span class='id headers'>headers</span><span class='rparen'>)</span> <span class='op'>:</span> <span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_end'>'</span></span><span class='rparen'>)</span> <span class='op'>+</span> <span class='lparen'>(</span><span class='id rows'>rows</span> <span class='op'>?</span> <span class='id tbody'>tbody</span><span class='lparen'>(</span><span class='id rows'>rows</span><span class='rparen'>)</span> <span class='op'>:</span> <span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_end'>'</span></span><span class='rparen'>)</span> <span class='op'>+</span> <span class='lparen'>(</span><span class='id footers'>footers</span> <span class='op'>?</span> <span class='id tfoot'>tfoot</span><span class='lparen'>(</span><span class='id footers'>footers</span><span class='rparen'>)</span> <span class='op'>:</span> <span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_end'>'</span></span><span class='rparen'>)</span><span class='rparen'>)</span>
+  <span class='kw'>end</span>
+  <span class='kw'>return</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>&lt;table</span><span class='embexpr_beg'>#{</span><span class='id attrs_to_string'>attrs_to_string</span><span class='lparen'>(</span><span class='id ops'>ops</span><span class='comma'>,</span><span class='lbracket'>[</span><span class='symbol'>:id</span><span class='comma'>,</span><span class='symbol'>:class</span><span class='rbracket'>]</span><span class='rparen'>)</span><span class='rbrace'>}</span><span class='tstring_content'>&gt;\n</span><span class='tstring_end'>&quot;</span></span> <span class='op'>+</span> <span class='id text'>text</span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>&lt;/table&gt;\n</span><span class='tstring_end'>&quot;</span></span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="tables-instance_method">
+  
+    - (<tt>String</tt>) <strong>tables</strong>(ops = {}) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Concatenated string of HTML tables
 </p>
-<p>
-If footers==[] then this method will use a footers array with blanks that
-is the same length as the headers array.
-</p>
-					
 
-					
-					<div class="method-source-code"
-						id="table-source">
-<pre>
-     <span class="ruby-comment cmt"># File lib/webget_ruby_html.rb, line 109</span>
-109:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">table</span>(<span class="ruby-identifier">ops</span>={})
-110:     <span class="ruby-identifier">text</span>=<span class="ruby-identifier">ops</span>[<span class="ruby-identifier">:text</span>]
-111:     <span class="ruby-keyword kw">if</span> <span class="ruby-operator">!</span><span class="ruby-identifier">text</span>
-112:      <span class="ruby-identifier">headers</span>=<span class="ruby-identifier">ops</span>[<span class="ruby-identifier">:headers</span>]
-113:      <span class="ruby-identifier">footers</span>=(<span class="ruby-keyword kw">defined?</span>(<span class="ruby-identifier">ops</span>[<span class="ruby-identifier">:footers</span>]) <span class="ruby-operator">?</span> ((<span class="ruby-identifier">ops</span>[<span class="ruby-identifier">:footers</span>]<span class="ruby-operator">==</span><span class="ruby-keyword kw">true</span>) <span class="ruby-operator">?</span> <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">headers</span>.<span class="ruby-identifier">size</span>,<span class="ruby-value str">''</span>) <span class="ruby-operator">:</span> <span class="ruby-identifier">ops</span>[<span class="ruby-identifier">:footers</span>]) <span class="ruby-operator">:</span> <span class="ruby-keyword kw">false</span>)
-114:      <span class="ruby-identifier">rows</span>=<span class="ruby-identifier">ops</span>[<span class="ruby-identifier">:rows</span>]
-115:      <span class="ruby-identifier">text</span>=((<span class="ruby-identifier">headers</span> <span class="ruby-value">? </span><span class="ruby-identifier">thead</span>(<span class="ruby-identifier">headers</span>) <span class="ruby-operator">:</span> <span class="ruby-value str">''</span>) <span class="ruby-operator">+</span> (<span class="ruby-identifier">rows</span> <span class="ruby-value">? </span><span class="ruby-identifier">tbody</span>(<span class="ruby-identifier">rows</span>) <span class="ruby-operator">:</span> <span class="ruby-value str">''</span>) <span class="ruby-operator">+</span> (<span class="ruby-identifier">footers</span> <span class="ruby-value">? </span><span class="ruby-identifier">tfoot</span>(<span class="ruby-identifier">footers</span>) <span class="ruby-operator">:</span> <span class="ruby-value str">''</span>))
-116:     <span class="ruby-keyword kw">end</span>
-117:     <span class="ruby-keyword kw">return</span> <span class="ruby-node">&quot;&lt;table#{attrs_to_string(ops,[:id,:class])}&gt;\n&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">text</span> <span class="ruby-operator">+</span> <span class="ruby-value str">&quot;&lt;/table&gt;\n&quot;</span>
-118:   <span class="ruby-keyword kw">end</span></pre>
-					</div>
-					
-				</div>
 
-				
-			</div>
-
-		
-			<div id="tables-method" class="method-detail ">
-				<a name="M000010"></a>
-
-				<div class="method-heading">
-				
-					<span class="method-name">tables</span><span
-						class="method-args">(ops={})</span>
-					<span class="method-click-advice">click to toggle source</span>
-				
-				</div>
-
-				<div class="method-description">
-					
-					<p>
-Options:
-</p>
-<pre>
-  :texts
-</pre>
-<p>
-Return:
-</p>
-<pre>
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <h3>Examples:</h3>
+    
+      <h4></h4>
+      <pre class="example code">  tables(['table1','table2']) =&gt;
   &lt;table&gt;
   texts[0]
   &lt;/table&gt;
   &lt;table&gt;
   texts[0]
   &lt;/table&gt;
-  ...
-</pre>
-					
+  ...</pre>
+    
+  </div>
 
-					
-					<div class="method-source-code"
-						id="tables-source">
-<pre>
-     <span class="ruby-comment cmt"># File lib/webget_ruby_html.rb, line 133</span>
-133:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">tables</span>(<span class="ruby-identifier">ops</span>={})
-134:     <span class="ruby-identifier">ops</span>[<span class="ruby-identifier">:texts</span>].<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">text</span><span class="ruby-operator">|</span> <span class="ruby-identifier">table</span>(<span class="ruby-identifier">ops</span>.<span class="ruby-identifier">merge</span>(<span class="ruby-identifier">:text=</span><span class="ruby-operator">&gt;</span><span class="ruby-identifier">text</span>))}.<span class="ruby-identifier">join</span>
-135:   <span class="ruby-keyword kw">end</span></pre>
-					</div>
-					
-				</div>
+  
+    
+    
+    <h3>Options Hash (<tt>ops</tt>):</h3>
+    <ul class="option">
+      
+        <li>
+          <span class="type">(<tt>Array</tt>, <tt>String</tt>)</span>
+          <span class="name">:texts,</span>
+          <span class="default">
+            
+              <span class="na">N/A</span>
+            
+          </span>
+          &mdash;
+array of strings creates an HTML table for each element and returns the
+concatenated string
 
-				
-			</div>
 
-		
-			<div id="tbody-method" class="method-detail ">
-				<a name="M000024"></a>
+        </tr>
+      
+    </ul>
+  
+<h3>Returns:</h3>
+<ul class="return">
+  
+    <li>
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+      
+        &mdash;
+        
+concatenated string of HTML tables
 
-				<div class="method-heading">
-				
-					<span class="method-name">tbody</span><span
-						class="method-args">(rows)</span>
-					<span class="method-click-advice">click to toggle source</span>
-				
-				</div>
 
-				<div class="method-description">
-					
-					<p>
-Return:
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+88
+89
+90</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/webget_ruby_html/tables.rb', line 88</span>
+
+<span class='kw'>def</span> <span class='id tables'>tables</span><span class='lparen'>(</span><span class='id ops'>ops</span><span class='op'>=</span><span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+  <span class='id ops'>ops</span><span class='lbracket'>[</span><span class='symbol'>:texts</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id map'>map</span><span class='lbrace'>{</span><span class='op'>|</span><span class='id text'>text</span><span class='op'>|</span> <span class='id table'>table</span><span class='lparen'>(</span><span class='id ops'>ops</span><span class='period'>.</span><span class='id merge'>merge</span><span class='lparen'>(</span><span class='symbol'>:text</span><span class='op'>=&gt;</span><span class='id text'>text</span><span class='rparen'>)</span><span class='rparen'>)</span><span class='rbrace'>}</span><span class='period'>.</span><span class='id join'>join</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="tbody-instance_method">
+  
+    - (<tt>String</tt>) <strong>tbody</strong>(rows) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Returns the <em>tbody</em> element of a table
 </p>
-<pre>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <h3>Examples:</h3>
+    
+      <h4></h4>
+      <pre class="example code">  tbody([['d','e,'f'],['g','h,'i'],['j','k','l']]) =&gt;
   &lt;tbody&gt;
   &lt;tr&gt;
-  &lt;td&gt;row[0][0]&lt;/td&gt;
-  &lt;td&gt;row[0][1]&lt;/td&gt;
-  &lt;td&gt;row[0][2]&lt;/td&gt;
+  &lt;td&gt;d&lt;/td&gt;
+  &lt;td&gt;e&lt;/td&gt;
+  &lt;td&gt;f&lt;/td&gt;
+  &lt;/tr&gt;  
+  &lt;tr&gt;   
+  &lt;td&gt;g&lt;/td&gt;
+  &lt;td&gt;h&lt;/td&gt;
+  &lt;td&gt;i&lt;/td&gt;
+  &lt;/tr&gt;  
+  &lt;tr&gt;   
+  &lt;td&gt;j&lt;/td&gt;
+  &lt;td&gt;k&lt;/td&gt;
+  &lt;td&gt;l&lt;/td&gt;
   &lt;/tr&gt;
-  &lt;tr&gt;
-  &lt;td&gt;row[1][0]&lt;/td&gt;
-  &lt;td&gt;row[1][1]&lt;/td&gt;
-  &lt;td&gt;row[1][2]&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-  &lt;td&gt;row[2][0]&lt;/td&gt;
-  &lt;td&gt;row[2][1]&lt;/td&gt;
-  &lt;td&gt;row[2][2]&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;/tbody&gt;
-</pre>
-					
+  &lt;/tbody&gt;</pre>
+    
+  </div>
+<h3>Parameters:</h3>
+<ul class="param">
+  
+    <li>
+      
+        <span class='type'>(<tt>Array</tt>, <tt>String</tt>)</span>
+      
+      
+        <span class='name'>row</span>
+      
+      
+      
+        &mdash;
+        
+array of strings to build table&#8217;s data rows
 
-					
-					<div class="method-source-code"
-						id="tbody-source">
-<pre>
-     <span class="ruby-comment cmt"># File lib/webget_ruby_html.rb, line 187</span>
-187:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">tbody</span>(<span class="ruby-identifier">rows</span>)
-188:     <span class="ruby-value str">&quot;&lt;tbody&gt;\n&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">trs</span>(<span class="ruby-identifier">rows</span>) <span class="ruby-operator">+</span> <span class="ruby-value str">&quot;&lt;/tbody&gt;\n&quot;</span>
-189:   <span class="ruby-keyword kw">end</span></pre>
-					</div>
-					
-				</div>
 
-				
-			</div>
+      
+    </li>
+  
+</ul>
+<h3>Returns:</h3>
+<ul class="return">
+  
+    <li>
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+      
+        &mdash;
+        
+tbody of a table
 
-		
-			<div id="td-method" class="method-detail ">
-				<a name="M000028"></a>
 
-				<div class="method-heading">
-				
-					<span class="method-name">td</span><span
-						class="method-args">(cell)</span>
-					<span class="method-click-advice">click to toggle source</span>
-				
-				</div>
+      
+    </li>
+  
+</ul>
 
-				<div class="method-description">
-					
-					<p>
-Return:
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+158
+159
+160</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/webget_ruby_html/tables.rb', line 158</span>
+
+<span class='kw'>def</span> <span class='id tbody'>tbody</span><span class='lparen'>(</span><span class='id rows'>rows</span><span class='rparen'>)</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>&lt;tbody&gt;\n</span><span class='tstring_end'>&quot;</span></span> <span class='op'>+</span> <span class='id trs'>trs</span><span class='lparen'>(</span><span class='id rows'>rows</span><span class='rparen'>)</span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>&lt;/tbody&gt;\n</span><span class='tstring_end'>&quot;</span></span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="td-instance_method">
+  
+    - (<tt>String</tt>) <strong>td</strong>(cell) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Returns a single <em>td</em> cell
 </p>
-<pre>
-  &lt;td&gt;cell&lt;/td&gt;
-</pre>
-					
 
-					
-					<div class="method-source-code"
-						id="td-source">
-<pre>
-     <span class="ruby-comment cmt"># File lib/webget_ruby_html.rb, line 234</span>
-234:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">td</span>(<span class="ruby-identifier">cell</span>)
-235:     <span class="ruby-value str">&quot;&lt;td&gt;&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">cell</span>.<span class="ruby-identifier">to_s</span> <span class="ruby-operator">+</span> <span class="ruby-value str">&quot;&lt;/td&gt;\n&quot;</span>
-236:   <span class="ruby-keyword kw">end</span></pre>
-					</div>
-					
-				</div>
 
-				
-			</div>
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <h3>Examples:</h3>
+    
+      <h4></h4>
+      <pre class="example code">  td(42) =&gt;
+  &lt;td&gt;42&lt;/td&gt;</pre>
+    
+  </div>
+<h3>Parameters:</h3>
+<ul class="param">
+  
+    <li>
+      
+        <span class='type'>(<tt>Object</tt>)</span>
+      
+      
+        <span class='name'>cell</span>
+      
+      
+      
+        &mdash;
+        
+content, can be any data type which implements to_s, to use
 
-		
-			<div id="tds-method" class="method-detail ">
-				<a name="M000029"></a>
 
-				<div class="method-heading">
-				
-					<span class="method-name">tds</span><span
-						class="method-args">(cells)</span>
-					<span class="method-click-advice">click to toggle source</span>
-				
-				</div>
+      
+    </li>
+  
+</ul>
+<h3>Returns:</h3>
+<ul class="return">
+  
+    <li>
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+      
+        &mdash;
+        
+single td cell
 
-				<div class="method-description">
-					
-					<p>
-Return:
+
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+207
+208
+209</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/webget_ruby_html/tables.rb', line 207</span>
+
+<span class='kw'>def</span> <span class='id td'>td</span><span class='lparen'>(</span><span class='id cell'>cell</span><span class='rparen'>)</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>&lt;td&gt;</span><span class='tstring_end'>&quot;</span></span> <span class='op'>+</span> <span class='id cell'>cell</span><span class='period'>.</span><span class='id to_s'>to_s</span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>&lt;/td&gt;\n</span><span class='tstring_end'>&quot;</span></span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="tds-instance_method">
+  
+    - (<tt>String</tt>) <strong>tds</strong>(cells) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Returns a concatenated string of <em>td</em> cells
 </p>
-<pre>
-  &lt;td&gt;cells[0]&lt;/td&gt;
-  &lt;td&gt;cells[1]&lt;/td&gt;
-  &lt;td&gt;cells[2]&lt;/td&gt;
-</pre>
-					
 
-					
-					<div class="method-source-code"
-						id="tds-source">
-<pre>
-     <span class="ruby-comment cmt"># File lib/webget_ruby_html.rb, line 244</span>
-244:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">tds</span>(<span class="ruby-identifier">cells</span>)
-245:     <span class="ruby-identifier">cells</span>.<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">x</span><span class="ruby-operator">|</span> <span class="ruby-identifier">td</span>(<span class="ruby-identifier">x</span>)}.<span class="ruby-identifier">join</span>
-246:   <span class="ruby-keyword kw">end</span></pre>
-					</div>
-					
-				</div>
 
-				
-			</div>
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <h3>Examples:</h3>
+    
+      <h4></h4>
+      <pre class="example code">  tds([42,'restaurant','Arthur Dent']) =&gt;
+  &lt;td&gt;42&lt;/td&gt;
+  &lt;td&gt;restaurant&lt;/td&gt;
+  &lt;td&gt;Arthur Dent&lt;/td&gt;</pre>
+    
+  </div>
+<h3>Parameters:</h3>
+<ul class="param">
+  
+    <li>
+      
+        <span class='type'>(<tt>Enumerable</tt>)</span>
+      
+      
+        <span class='name'>cell</span>
+      
+      
+      
+        &mdash;
+        
+contents, can be any data type which implements to_s, to use
 
-		
-			<div id="tfoot-method" class="method-detail ">
-				<a name="M000030"></a>
 
-				<div class="method-heading">
-				
-					<span class="method-name">tfoot</span><span
-						class="method-args">(footers)</span>
-					<span class="method-click-advice">click to toggle source</span>
-				
-				</div>
+      
+    </li>
+  
+</ul>
+<h3>Returns:</h3>
+<ul class="return">
+  
+    <li>
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+      
+        &mdash;
+        
+single td cell
 
-				<div class="method-description">
-					
-					<p>
-Return:
+
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+221
+222
+223</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/webget_ruby_html/tables.rb', line 221</span>
+
+<span class='kw'>def</span> <span class='id tds'>tds</span><span class='lparen'>(</span><span class='id cells'>cells</span><span class='rparen'>)</span>
+  <span class='id cells'>cells</span><span class='period'>.</span><span class='id map'>map</span><span class='lbrace'>{</span><span class='op'>|</span><span class='id x'>x</span><span class='op'>|</span> <span class='id td'>td</span><span class='lparen'>(</span><span class='id x'>x</span><span class='rparen'>)</span><span class='rbrace'>}</span><span class='period'>.</span><span class='id join'>join</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="tfoot-instance_method">
+  
+    - (<tt>String</tt>) <strong>tfoot</strong>(footers) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Returns the <em>tfoot</em> row for a table
 </p>
-<pre>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <h3>Examples:</h3>
+    
+      <h4></h4>
+      <pre class="example code">Total up money columns, leave others blank
+  tfoot(['Totals','','','$314,159','$26,703.51','$340,862.51'],'') =&gt;
   &lt;tfoot&gt;
   &lt;th&gt;
-  &lt;th&gt;footer[0]&lt;/th&gt;
-  &lt;th&gt;footer[1]&lt;/th&gt;
-  &lt;th&gt;footer[2]&lt;/th&gt;
-  &lt;/tfoot&gt;
-</pre>
-					
+  &lt;th&gt;Totals&lt;/th&gt;
+  &lt;th&gt;&lt;/th&gt;
+  &lt;th&gt;&lt;/th&gt;
+  &lt;th&gt;$314,159&lt;/th&gt;
+  &lt;th&gt;$26,703.51&lt;/th&gt;
+  &lt;th&gt;$340,862.51&lt;/th&gt;
+  &lt;th&gt;&lt;/th&gt;
+  &lt;/tfoot&gt;</pre>
+    
+  </div>
+<h3>Parameters:</h3>
+<ul class="param">
+  
+    <li>
+      
+        <span class='type'>(<tt>Array</tt>, <tt>Object</tt>)</span>
+      
+      
+        <span class='name'>footers</span>
+      
+      
+      
+        &mdash;
+        
+array of items, can be any data type which implements to_s, to use as table
+footer row
 
-					
-					<div class="method-source-code"
-						id="tfoot-source">
-<pre>
-     <span class="ruby-comment cmt"># File lib/webget_ruby_html.rb, line 257</span>
-257:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">tfoot</span>(<span class="ruby-identifier">footers</span>)
-258:     <span class="ruby-value str">&quot;&lt;tfoot&gt;\n&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">tr</span>(<span class="ruby-identifier">ths</span>(<span class="ruby-identifier">footers</span>)) <span class="ruby-operator">+</span> <span class="ruby-value str">&quot;&lt;/tfoot&gt;\n&quot;</span>
-259:   <span class="ruby-keyword kw">end</span></pre>
-					</div>
-					
-				</div>
 
-				
-			</div>
+      
+    </li>
+  
+</ul>
+<h3>Returns:</h3>
+<ul class="return">
+  
+    <li>
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+      
+        &mdash;
+        
+tfoot row of a table
 
-		
-			<div id="th-method" class="method-detail ">
-				<a name="M000016"></a>
 
-				<div class="method-heading">
-				
-					<span class="method-name">th</span><span
-						class="method-args">(header)</span>
-					<span class="method-click-advice">click to toggle source</span>
-				
-				</div>
+      
+    </li>
+  
+</ul>
 
-				<div class="method-description">
-					
-					<p>
-Return:
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+243
+244
+245</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/webget_ruby_html/tables.rb', line 243</span>
+
+<span class='kw'>def</span> <span class='id tfoot'>tfoot</span><span class='lparen'>(</span><span class='id footers'>footers</span><span class='rparen'>)</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>&lt;tfoot&gt;\n</span><span class='tstring_end'>&quot;</span></span> <span class='op'>+</span> <span class='id tr'>tr</span><span class='lparen'>(</span><span class='id ths'>ths</span><span class='lparen'>(</span><span class='id footers'>footers</span><span class='rparen'>)</span><span class='rparen'>)</span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>&lt;/tfoot&gt;\n</span><span class='tstring_end'>&quot;</span></span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="th-instance_method">
+  
+    - (<tt>String</tt>) <strong>th</strong>(header) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Returns a single <em>th</em> cell
 </p>
-<pre>
-  &lt;th&gt;header&lt;/th&gt;
-</pre>
-					
 
-					
-					<div class="method-source-code"
-						id="th-source">
-<pre>
-     <span class="ruby-comment cmt"># File lib/webget_ruby_html.rb, line 153</span>
-153:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">th</span>(<span class="ruby-identifier">header</span>)
-154:     <span class="ruby-value str">&quot;&lt;th&gt;&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">header</span>.<span class="ruby-identifier">to_s</span> <span class="ruby-operator">+</span> <span class="ruby-value str">&quot;&lt;/th&gt;\n&quot;</span>
-155:   <span class="ruby-keyword kw">end</span></pre>
-					</div>
-					
-				</div>
 
-				
-			</div>
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <h3>Examples:</h3>
+    
+      <h4></h4>
+      <pre class="example code">  th('Name') =&gt;
+  &lt;th&gt;header&lt;/th&gt;</pre>
+    
+  </div>
+<h3>Parameters:</h3>
+<ul class="param">
+  
+    <li>
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+        <span class='name'>header</span>
+      
+      
+      
+        &mdash;
+        
+text to use
 
-		
-			<div id="thead-method" class="method-detail ">
-				<a name="M000015"></a>
 
-				<div class="method-heading">
-				
-					<span class="method-name">thead</span><span
-						class="method-args">(headers)</span>
-					<span class="method-click-advice">click to toggle source</span>
-				
-				</div>
+      
+    </li>
+  
+</ul>
+<h3>Returns:</h3>
+<ul class="return">
+  
+    <li>
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+      
+        &mdash;
+        
+single th cell
 
-				<div class="method-description">
-					
-					<p>
-Return:
+
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+116
+117
+118</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/webget_ruby_html/tables.rb', line 116</span>
+
+<span class='kw'>def</span> <span class='id th'>th</span><span class='lparen'>(</span><span class='id header'>header</span><span class='rparen'>)</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>&lt;th&gt;</span><span class='tstring_end'>&quot;</span></span> <span class='op'>+</span> <span class='id header'>header</span><span class='period'>.</span><span class='id to_s'>to_s</span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>&lt;/th&gt;\n</span><span class='tstring_end'>&quot;</span></span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="thead-instance_method">
+  
+    - (<tt>String</tt>) <strong>thead</strong>(headers) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Returns the <em>thead</em> row for a table
 </p>
-<pre>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <h3>Examples:</h3>
+    
+      <h4></h4>
+      <pre class="example code">  thead(['a','b','c]) =&gt;
   &lt;thead&gt;
-  &lt;th&gt;header[0]&lt;/th&gt;
-  &lt;th&gt;header[1]&lt;/th&gt;
-  &lt;th&gt;header[2]&lt;/th&gt;
-  &lt;/thead&gt;
-</pre>
-					
+  &lt;th&gt;a&lt;/th&gt;
+  &lt;th&gt;b&lt;/th&gt;
+  &lt;th&gt;c&lt;/th&gt;
+  &lt;/thead&gt;</pre>
+    
+  </div>
+<h3>Parameters:</h3>
+<ul class="param">
+  
+    <li>
+      
+        <span class='type'>(<tt>Array</tt>, <tt>String</tt>)</span>
+      
+      
+        <span class='name'>headers</span>
+      
+      
+      
+        &mdash;
+        
+array of strings to use as column headers
 
-					
-					<div class="method-source-code"
-						id="thead-source">
-<pre>
-     <span class="ruby-comment cmt"># File lib/webget_ruby_html.rb, line 145</span>
-145:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">thead</span>(<span class="ruby-identifier">headers</span>)
-146:     <span class="ruby-value str">&quot;&lt;thead&gt;\n&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">tr</span>(<span class="ruby-identifier">ths</span>(<span class="ruby-identifier">headers</span>)) <span class="ruby-operator">+</span> <span class="ruby-value str">&quot;&lt;/thead&gt;\n&quot;</span>
-147:   <span class="ruby-keyword kw">end</span></pre>
-					</div>
-					
-				</div>
 
-				
-			</div>
+      
+    </li>
+  
+</ul>
+<h3>Returns:</h3>
+<ul class="return">
+  
+    <li>
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+      
+        &mdash;
+        
+thead row of a table
 
-		
-			<div id="ths-method" class="method-detail ">
-				<a name="M000023"></a>
 
-				<div class="method-heading">
-				
-					<span class="method-name">ths</span><span
-						class="method-args">(headers)</span>
-					<span class="method-click-advice">click to toggle source</span>
-				
-				</div>
+      
+    </li>
+  
+</ul>
 
-				<div class="method-description">
-					
-					<p>
-Return:
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+104
+105
+106</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/webget_ruby_html/tables.rb', line 104</span>
+
+<span class='kw'>def</span> <span class='id thead'>thead</span><span class='lparen'>(</span><span class='id headers'>headers</span><span class='rparen'>)</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>&lt;thead&gt;\n</span><span class='tstring_end'>&quot;</span></span> <span class='op'>+</span> <span class='id tr'>tr</span><span class='lparen'>(</span><span class='id ths'>ths</span><span class='lparen'>(</span><span class='id headers'>headers</span><span class='rparen'>)</span><span class='rparen'>)</span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>&lt;/thead&gt;\n</span><span class='tstring_end'>&quot;</span></span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="ths-instance_method">
+  
+    - (<tt>String</tt>) <strong>ths</strong>(headers) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Returns a string of <em>th</em> cells
 </p>
-<pre>
-  &lt;th&gt;header[0]&lt;/th&gt;
-  &lt;th&gt;header[1]&lt;/th&gt;
-  &lt;th&gt;header[2]&lt;/th&gt;
-</pre>
-					
 
-					
-					<div class="method-source-code"
-						id="ths-source">
-<pre>
-     <span class="ruby-comment cmt"># File lib/webget_ruby_html.rb, line 163</span>
-163:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">ths</span>(<span class="ruby-identifier">headers</span>)
-164:     <span class="ruby-identifier">headers</span>.<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">x</span><span class="ruby-operator">|</span> <span class="ruby-identifier">th</span>(<span class="ruby-identifier">x</span>)}.<span class="ruby-identifier">join</span>
-165:   <span class="ruby-keyword kw">end</span></pre>
-					</div>
-					
-				</div>
 
-				
-			</div>
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <h3>Examples:</h3>
+    
+      <h4></h4>
+      <pre class="example code">  ths(['a','b','c]) =&gt;
+  &lt;th&gt;a&lt;/th&gt;
+  &lt;th&gt;b&lt;/th&gt;
+  &lt;th&gt;c&lt;/th&gt;</pre>
+    
+  </div>
+<h3>Parameters:</h3>
+<ul class="param">
+  
+    <li>
+      
+        <span class='type'>(<tt>Array</tt>, <tt>String</tt>)</span>
+      
+      
+        <span class='name'>header</span>
+      
+      
+      
+        &mdash;
+        
+texts to use
 
-		
-			<div id="tr-method" class="method-detail ">
-				<a name="M000026"></a>
 
-				<div class="method-heading">
-				
-					<span class="method-name">tr</span><span
-						class="method-args">(row)</span>
-					<span class="method-click-advice">click to toggle source</span>
-				
-				</div>
+      
+    </li>
+  
+</ul>
+<h3>Returns:</h3>
+<ul class="return">
+  
+    <li>
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+      
+        &mdash;
+        
+string of th cells
 
-				<div class="method-description">
-					
-					<p>
-Return:
+
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+130
+131
+132</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/webget_ruby_html/tables.rb', line 130</span>
+
+<span class='kw'>def</span> <span class='id ths'>ths</span><span class='lparen'>(</span><span class='id headers'>headers</span><span class='rparen'>)</span>
+  <span class='id headers'>headers</span><span class='period'>.</span><span class='id map'>map</span><span class='lbrace'>{</span><span class='op'>|</span><span class='id x'>x</span><span class='op'>|</span> <span class='id th'>th</span><span class='lparen'>(</span><span class='id x'>x</span><span class='rparen'>)</span><span class='rbrace'>}</span><span class='period'>.</span><span class='id join'>join</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="tr-instance_method">
+  
+    - (<tt>String</tt>) <strong>tr</strong>(row) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Returns a single table row
 </p>
-<pre>
- &lt;tr&gt;
- row
- &lt;/tr&gt;
-</pre>
-<p>
-Return when row is enumerable:
-</p>
-<pre>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <h3>Examples:</h3>
+    
+      <h4></h4>
+      <pre class="example code">Simple use:
+  tr('&lt;td&gt;a&lt;/td&gt;&lt;td&gt;b&lt;/td&gt;&lt;td&gt;c&lt;/td&gt;') =&gt;
   &lt;tr&gt;
-  &lt;td&gt;row[0]&lt;/td&gt;
-  &lt;td&gt;row[1]&lt;/td&gt;
-  &lt;td&gt;row[2]&lt;/td&gt;
+  &lt;td&gt;a&lt;/td&gt;&lt;td&gt;b&lt;/td&gt;&lt;td&gt;c&lt;/td&gt;
   &lt;/tr&gt;
-</pre>
-					
 
-					
-					<div class="method-source-code"
-						id="tr-source">
-<pre>
-     <span class="ruby-comment cmt"># File lib/webget_ruby_html.rb, line 204</span>
-204:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">tr</span>(<span class="ruby-identifier">row</span>)
-205:     <span class="ruby-value str">&quot;&lt;tr&gt;\n&quot;</span> <span class="ruby-operator">+</span> (<span class="ruby-identifier">row</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">String</span>) <span class="ruby-operator">?</span> <span class="ruby-identifier">row</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">row</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">Enumerable</span>) <span class="ruby-operator">?</span> <span class="ruby-identifier">tds</span>(<span class="ruby-identifier">row</span>) <span class="ruby-operator">:</span> <span class="ruby-identifier">row</span>.<span class="ruby-identifier">to_s</span>) <span class="ruby-operator">+</span> <span class="ruby-value str">&quot;&lt;/tr&gt;\n&quot;</span>
-206:   <span class="ruby-keyword kw">end</span></pre>
-					</div>
-					
-				</div>
+Enumerable usage:
+  tr(['&lt;td&gt;a&lt;/td&gt;&lt;td&gt;b&lt;/td&gt;&lt;td&gt;c&lt;/td&gt;','&lt;td&gt;d&lt;/td&gt;&lt;td&gt;e&lt;/td&gt;&lt;td&gt;f&lt;/td&gt;','&lt;td&gt;g&lt;/td&gt;&lt;td&gt;h&lt;/td&gt;&lt;td&gt;i&lt;/td&gt;']) =&gt;
+  &lt;tr&gt;
+  &lt;td&gt;&lt;td&gt;a&lt;/td&gt;&lt;td&gt;b&lt;/td&gt;&lt;td&gt;c&lt;/td&gt;&lt;/td&gt;
+  &lt;td&gt;&lt;td&gt;d&lt;/td&gt;&lt;td&gt;e&lt;/td&gt;&lt;td&gt;f&lt;/td&gt;&lt;/td&gt;
+  &lt;td&gt;&lt;td&gt;g&lt;/td&gt;&lt;td&gt;h&lt;/td&gt;&lt;td&gt;i&lt;/td&gt;&lt;/td&gt;
+  &lt;/tr&gt;</pre>
+    
+  </div>
+<h3>Parameters:</h3>
+<ul class="param">
+  
+    <li>
+      
+        <span class='type'>(<tt>String</tt>, <tt>Enumerable</tt>)</span>
+      
+      
+        <span class='name'>row</span>
+      
+      
+      
+        &mdash;
+        
+text to use or enumerable (array, hash, etc) to iterate over to build
+string from
 
-				
-			</div>
 
-		
-			<div id="trs-method" class="method-detail ">
-				<a name="M000027"></a>
+      
+    </li>
+  
+</ul>
+<h3>Returns:</h3>
+<ul class="return">
+  
+    <li>
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+      
+        &mdash;
+        
+single tr string
 
-				<div class="method-heading">
-				
-					<span class="method-name">trs</span><span
-						class="method-args">(rows)</span>
-					<span class="method-click-advice">click to toggle source</span>
-				
-				</div>
 
-				<div class="method-description">
-					
-					<p>
-Return:
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+181
+182
+183</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/webget_ruby_html/tables.rb', line 181</span>
+
+<span class='kw'>def</span> <span class='id tr'>tr</span><span class='lparen'>(</span><span class='id row'>row</span><span class='rparen'>)</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>&lt;tr&gt;\n</span><span class='tstring_end'>&quot;</span></span> <span class='op'>+</span> <span class='lparen'>(</span><span class='id row'>row</span><span class='period'>.</span><span class='id is_a?'>is_a?</span><span class='lparen'>(</span><span class='const'>String</span><span class='rparen'>)</span> <span class='op'>?</span> <span class='id row'>row</span> <span class='op'>:</span> <span class='id row'>row</span><span class='period'>.</span><span class='id is_a?'>is_a?</span><span class='lparen'>(</span><span class='const'>Enumerable</span><span class='rparen'>)</span> <span class='op'>?</span> <span class='id tds'>tds</span><span class='lparen'>(</span><span class='id row'>row</span><span class='rparen'>)</span> <span class='op'>:</span> <span class='id row'>row</span><span class='period'>.</span><span class='id to_s'>to_s</span><span class='rparen'>)</span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>&lt;/tr&gt;\n</span><span class='tstring_end'>&quot;</span></span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="trs-instance_method">
+  
+    - (<tt>String</tt>) <strong>trs</strong>(rows) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Returns a string of table rows
 </p>
-<pre>
-  &lt;tr&gt;
-  &lt;td&gt;row[0][0]&lt;/td&gt;
-  &lt;td&gt;row[0][1]&lt;/td&gt;
-  &lt;td&gt;row[0][2]&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-  &lt;td&gt;row[1][0]&lt;/td&gt;
-  &lt;td&gt;row[1][1]&lt;/td&gt;
-  &lt;td&gt;row[1][2]&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-  &lt;td&gt;row[2][0]&lt;/td&gt;
-  &lt;td&gt;row[2][1]&lt;/td&gt;
-  &lt;td&gt;row[2][2]&lt;/td&gt;
-  &lt;/tr&gt;
-</pre>
-					
 
-					
-					<div class="method-source-code"
-						id="trs-source">
-<pre>
-     <span class="ruby-comment cmt"># File lib/webget_ruby_html.rb, line 226</span>
-226:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">trs</span>(<span class="ruby-identifier">rows</span>)
-227:     <span class="ruby-identifier">rows</span>.<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">x</span><span class="ruby-operator">|</span> <span class="ruby-identifier">tr</span>(<span class="ruby-identifier">x</span>)}.<span class="ruby-identifier">join</span>
-228:   <span class="ruby-keyword kw">end</span></pre>
-					</div>
-					
-				</div>
 
-				
-			</div>
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <h3>Examples:</h3>
+    
+      <h4></h4>
+      <pre class="example code">  trs(['&lt;td&gt;a&lt;/td&gt;&lt;td&gt;b&lt;/td&gt;&lt;td&gt;c&lt;/td&gt;','&lt;td&gt;d&lt;/td&gt;&lt;td&gt;e&lt;/td&gt;&lt;td&gt;f&lt;/td&gt;','&lt;td&gt;g&lt;/td&gt;&lt;td&gt;h&lt;/td&gt;&lt;td&gt;i&lt;/td&gt;']) =&gt;
+  &lt;tr&gt;&lt;td&gt;&lt;td&gt;a&lt;/td&gt;&lt;td&gt;b&lt;/td&gt;&lt;td&gt;c&lt;/td&gt;&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;&lt;td&gt;d&lt;/td&gt;&lt;td&gt;e&lt;/td&gt;&lt;td&gt;f&lt;/td&gt;&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;&lt;td&gt;g&lt;/td&gt;&lt;td&gt;h&lt;/td&gt;&lt;td&gt;i&lt;/td&gt;&lt;/td&gt;&lt;/tr&gt;</pre>
+    
+  </div>
+<h3>Parameters:</h3>
+<ul class="param">
+  
+    <li>
+      
+        <span class='type'>(<tt>Array</tt>, <tt>String</tt>, <tt>Enumerable</tt>)</span>
+      
+      
+        <span class='name'>rows</span>
+      
+      
+      
+        &mdash;
+        
+text to use or enumerable (array, hash, etc) to iterate over to build
+string from
 
-		
-			<div id="ul-method" class="method-detail ">
-				<a name="M000031"></a>
 
-				<div class="method-heading">
-				
-					<span class="method-name">ul</span><span
-						class="method-args">(list)</span>
-					<span class="method-click-advice">click to toggle source</span>
-				
-				</div>
+      
+    </li>
+  
+</ul>
+<h3>Returns:</h3>
+<ul class="return">
+  
+    <li>
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+      
+        &mdash;
+        
+concatenated tr string
 
-				<div class="method-description">
-					
-					<p>
-Return:
+
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+195
+196
+197</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/webget_ruby_html/tables.rb', line 195</span>
+
+<span class='kw'>def</span> <span class='id trs'>trs</span><span class='lparen'>(</span><span class='id rows'>rows</span><span class='rparen'>)</span>
+  <span class='id rows'>rows</span><span class='period'>.</span><span class='id map'>map</span><span class='lbrace'>{</span><span class='op'>|</span><span class='id x'>x</span><span class='op'>|</span> <span class='id tr'>tr</span><span class='lparen'>(</span><span class='id x'>x</span><span class='rparen'>)</span><span class='rbrace'>}</span><span class='period'>.</span><span class='id join'>join</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="ul-instance_method">
+  
+    - (<tt>String</tt>) <strong>ul</strong>(list) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Wrap each item in passed arrays of stringifiable items as a list, each item
+in <em>li</em> tags, the whole list in <em>ul</em> tags
 </p>
-<pre>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <h3>Examples:</h3>
+    
+      <h4></h4>
+      <pre class="example code">passed list is a string
+  ul('list') =&gt;
   &lt;ul&gt;
   list
-  &lt;/ul&gt;
-</pre>
-<p>
-Return when list is enumerable:
-</p>
-<pre>
+  &lt;/ul&gt;</pre>
+    
+      <h4></h4>
+      <pre class="example code">passed list is enumerable
+  ul([1,2,3]) =&gt;
   &lt;ul&gt;
   &lt;li&gt;list[1]&lt;/li&gt;
   &lt;li&gt;list[2]&lt;/li&gt;
   &lt;li&gt;list[3]&lt;/li&gt;
-  &lt;/ul&gt;
-</pre>
-					
+  &lt;/ul&gt;</pre>
+    
+  </div>
+<h3>Parameters:</h3>
+<ul class="param">
+  
+    <li>
+      
+        <span class='type'>(<tt>Enumerable</tt>, <tt>Objects</tt>)</span>
+      
+      
+        <span class='name'>lists</span>
+      
+      
+      
+        &mdash;
+        
+of items, each item can be any data type which implements to_s, to wrap
 
-					
-					<div class="method-source-code"
-						id="ul-source">
-<pre>
-     <span class="ruby-comment cmt"># File lib/webget_ruby_html.rb, line 274</span>
-274:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">ul</span>(<span class="ruby-identifier">list</span>)
-275:     <span class="ruby-value str">&quot;&lt;ul&gt;\n&quot;</span> <span class="ruby-operator">+</span> (<span class="ruby-identifier">list</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">String</span>) <span class="ruby-operator">?</span> <span class="ruby-identifier">list</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">list</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">Enumerable</span>) <span class="ruby-operator">?</span> <span class="ruby-identifier">lis</span>(<span class="ruby-identifier">list</span>) <span class="ruby-operator">:</span> <span class="ruby-identifier">list</span>.<span class="ruby-identifier">to_s</span>) <span class="ruby-operator">+</span> <span class="ruby-value str">&quot;&lt;/ul&gt;\n&quot;</span>
-276:   <span class="ruby-keyword kw">end</span></pre>
-					</div>
-					
-				</div>
 
-				
-			</div>
+      
+    </li>
+  
+</ul>
+<h3>Returns:</h3>
+<ul class="return">
+  
+    <li>
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+      
+        &mdash;
+        
+list of items wrapped in <em>ul</em> tags
 
-		
-			<div id="uls-method" class="method-detail ">
-				<a name="M000032"></a>
 
-				<div class="method-heading">
-				
-					<span class="method-name">uls</span><span
-						class="method-args">(lists)</span>
-					<span class="method-click-advice">click to toggle source</span>
-				
-				</div>
+      
+    </li>
+  
+</ul>
 
-				<div class="method-description">
-					
-					<p>
-Return:
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+23
+24
+25</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/webget_ruby_html/lists.rb', line 23</span>
+
+<span class='kw'>def</span> <span class='id ul'>ul</span><span class='lparen'>(</span><span class='id list'>list</span><span class='rparen'>)</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>&lt;ul&gt;\n</span><span class='tstring_end'>&quot;</span></span> <span class='op'>+</span> <span class='lparen'>(</span><span class='id list'>list</span><span class='period'>.</span><span class='id is_a?'>is_a?</span><span class='lparen'>(</span><span class='const'>String</span><span class='rparen'>)</span> <span class='op'>?</span> <span class='id list'>list</span> <span class='op'>:</span> <span class='id list'>list</span><span class='period'>.</span><span class='id is_a?'>is_a?</span><span class='lparen'>(</span><span class='const'>Enumerable</span><span class='rparen'>)</span> <span class='op'>?</span> <span class='id lis'>lis</span><span class='lparen'>(</span><span class='id list'>list</span><span class='rparen'>)</span> <span class='op'>:</span> <span class='id list'>list</span><span class='period'>.</span><span class='id to_s'>to_s</span><span class='rparen'>)</span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>&lt;/ul&gt;\n</span><span class='tstring_end'>&quot;</span></span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="uls-instance_method">
+  
+    - (<tt>String</tt>) <strong>uls</strong>(lists) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Wrap each item in passed array of arrays of stringifiable items as a list,
+each item in <em>li</em> tags, each sub-array in <em>ul</em> tags
 </p>
-<pre>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <h3>Examples:</h3>
+    
+      <h4></h4>
+      <pre class="example code">  uls([1,2,3],[4,5,6],[7,8,9]) =&gt;
   &lt;ul&gt;
   &lt;li&gt;list[0][1]&lt;/li&gt;
   &lt;li&gt;list[0][2]&lt;/li&gt;
@@ -912,154 +2189,202 @@ Return:
   &lt;li&gt;list[2][1]&lt;/li&gt;
   &lt;li&gt;list[2][2]&lt;/li&gt;
   &lt;li&gt;list[2][3]&lt;/li&gt;
-  &lt;/ul&gt;
-</pre>
-					
+  &lt;/ul&gt;</pre>
+    
+  </div>
+<h3>Parameters:</h3>
+<ul class="param">
+  
+    <li>
+      
+        <span class='type'>(<tt>Array</tt>, <tt>Objects</tt>)</span>
+      
+      
+        <span class='name'>lists</span>
+      
+      
+      
+        &mdash;
+        
+of items, each item can be any data type which implements to_s, to wrap
 
-					
-					<div class="method-source-code"
-						id="uls-source">
-<pre>
-     <span class="ruby-comment cmt"># File lib/webget_ruby_html.rb, line 296</span>
-296:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">uls</span>(<span class="ruby-identifier">lists</span>)
-297:    <span class="ruby-identifier">lists</span>.<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">x</span><span class="ruby-operator">|</span> <span class="ruby-identifier">ul</span>(<span class="ruby-identifier">x</span>)}.<span class="ruby-identifier">join</span>
-298:   <span class="ruby-keyword kw">end</span></pre>
-					</div>
-					
-				</div>
 
-				
-			</div>
+      
+    </li>
+  
+</ul>
+<h3>Returns:</h3>
+<ul class="return">
+  
+    <li>
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+      
+        &mdash;
+        
+passed array of lists wrapped in <em>ul</em> tags
 
-		
-			<div id="wrap-method" class="method-detail ">
-				<a name="M000001"></a>
 
-				<div class="method-heading">
-				
-					<span class="method-name">wrap</span><span
-						class="method-args">(text,tag)</span>
-					<span class="method-click-advice">click to toggle source</span>
-				
-				</div>
+      
+    </li>
+  
+</ul>
 
-				<div class="method-description">
-					
-					<p>
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+50
+51
+52</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/webget_ruby_html/lists.rb', line 50</span>
+
+<span class='kw'>def</span> <span class='id uls'>uls</span><span class='lparen'>(</span><span class='id lists'>lists</span><span class='rparen'>)</span>
+ <span class='id lists'>lists</span><span class='period'>.</span><span class='id map'>map</span><span class='lbrace'>{</span><span class='op'>|</span><span class='id x'>x</span><span class='op'>|</span> <span class='id ul'>ul</span><span class='lparen'>(</span><span class='id x'>x</span><span class='rparen'>)</span><span class='rbrace'>}</span><span class='period'>.</span><span class='id join'>join</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="wrap-instance_method">
+  
+    - (<tt>String</tt>) <strong>wrap</strong>(text, tag) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
 Return the text wrapped in a tag pair.
 </p>
-<h2>Example</h2>
-<pre>
-  wrap('foo','&lt;bar&gt;') =&gt; &quot;&lt;bar&gt;foo&lt;/bar&gt;&quot;
-</pre>
-<h2>Example: you can omit the tag angle brackets</h2>
-<pre>
-  wrap('foo','bar') =&gt; &quot;&lt;bar&gt;foo&lt;/bar&gt;&quot;
-</pre>
-<h2>Example: you can use arbitrary tag attributes</h2>
-<pre>
-  wrap('foo','&lt;bar x=&quot;1&quot; y=&quot;2&quot;&gt;') =&gt; &quot;&lt;bar x=1 y=2&gt;foo&lt;/bar&gt;&quot;
-</pre>
-					
-
-					
-					<div class="method-source-code"
-						id="wrap-source">
-<pre>
-    <span class="ruby-comment cmt"># File lib/webget_ruby_html.rb, line 42</span>
-42:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">wrap</span>(<span class="ruby-identifier">text</span>,<span class="ruby-identifier">tag</span>)
-43:     <span class="ruby-identifier">t</span>=<span class="ruby-identifier">tag</span>
-44:     <span class="ruby-identifier">t</span>.<span class="ruby-identifier">sub!</span>(<span class="ruby-regexp re">/^&lt;/</span>,<span class="ruby-value str">''</span>)
-45:     <span class="ruby-identifier">t</span>.<span class="ruby-identifier">sub!</span>(<span class="ruby-regexp re">/&gt;$/</span>,<span class="ruby-value str">''</span>)
-46:     <span class="ruby-identifier">open</span>=<span class="ruby-identifier">t</span>
-47:     <span class="ruby-identifier">shut</span>=<span class="ruby-identifier">t</span>.<span class="ruby-identifier">split</span>.<span class="ruby-identifier">first</span>
-48:     <span class="ruby-node">&quot;&lt;#{open}&gt;#{text}&lt;/#{shut}&gt;&quot;</span>
-49:   <span class="ruby-keyword kw">end</span></pre>
-					</div>
-					
-				</div>
-
-				
-			</div>
-
-		
-		</div>
-	
-		<div id="protected-instance-method-details" class="method-section section">
-			<h3 class="section-header">Protected Instance Methods</h3>
-
-		
-			<div id="attrs-to-string-method" class="method-detail ">
-				<a name="M000035"></a>
-
-				<div class="method-heading">
-				
-					<span class="method-name">attrs_to_string</span><span
-						class="method-args">(ops,keys=nil)</span>
-					<span class="method-click-advice">click to toggle source</span>
-				
-				</div>
-
-				<div class="method-description">
-					
-					<p>
-There&#8217;s likely a better more-standard way to do this.
-</p>
-<p>
-This method is only used by the <a href="HTML.html#M000005">table</a>
-method.
-</p>
-<p>
-Return a string of the attributes suitable for <a href="HTML.html">HTML</a>
-</p>
-<h2>Example</h2>
-<pre>
-  hash={:foo'=&gt;'bar',:goo'=&gt;'car',;hoo=&gt;'dar'}
-  attrs(hash) =&gt; ' foo=&quot;bar&quot; goo=&quot;car&quot; hoo=&quot;dar&quot;'
-</pre>
-<h2>Example with selected keys</h2>
-<pre>
-  hash={:foo'=&gt;'bar',:goo'=&gt;'car',;hoo=&gt;'dar'}
-  attrs(hash,[:foo,:hoo]) =&gt; ' foo=&quot;bar&quot; hoo=&quot;dar&quot;'
-</pre>
-					
-
-					
-					<div class="method-source-code"
-						id="attrs-to-string-source">
-<pre>
-     <span class="ruby-comment cmt"># File lib/webget_ruby_html.rb, line 336</span>
-336:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">attrs_to_string</span>(<span class="ruby-identifier">ops</span>,<span class="ruby-identifier">keys</span>=<span class="ruby-keyword kw">nil</span>)
-337:    <span class="ruby-keyword kw">return</span> <span class="ruby-value str">''</span> <span class="ruby-keyword kw">if</span> <span class="ruby-operator">!</span><span class="ruby-identifier">ops</span> <span class="ruby-keyword kw">or</span> <span class="ruby-identifier">ops</span><span class="ruby-operator">==</span>{}
-338:    <span class="ruby-identifier">keys</span><span class="ruby-operator">||=</span><span class="ruby-identifier">ops</span>.<span class="ruby-identifier">keys</span>
-339:    <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">keys</span>.<span class="ruby-identifier">inject</span>(<span class="ruby-value str">''</span>){<span class="ruby-operator">|</span><span class="ruby-identifier">s</span>,<span class="ruby-identifier">k</span><span class="ruby-operator">|</span> <span class="ruby-identifier">s</span> = (<span class="ruby-identifier">ops</span>[<span class="ruby-identifier">k</span>] <span class="ruby-operator">?</span> <span class="ruby-identifier">s</span><span class="ruby-operator">+=</span><span class="ruby-node">&quot; #{k}=\&quot;#{ops[k]}\&quot;&quot;</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">s</span>)}
-340:   <span class="ruby-keyword kw">end</span></pre>
-					</div>
-					
-				</div>
-
-				
-			</div>
-
-		
-		</div>
-	
-
-	</div>
 
 
-	<div id="rdoc-debugging-section-dump" class="debugging-section">
-	
-		<p>Disabled; run with --debug to generate this.</p>
-	
-	</div>
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <h3>Examples:</h3>
+    
+      <h4></h4>
+      <pre class="example code">  wrap('foo','&lt;bar&gt;') =&gt; &quot;&lt;bar&gt;foo&lt;/bar&gt;&quot;</pre>
+    
+      <h4></h4>
+      <pre class="example code">you can omit the tag angle brackets
+  wrap('foo','bar') =&gt; &quot;&lt;bar&gt;foo&lt;/bar&gt;&quot;</pre>
+    
+      <h4></h4>
+      <pre class="example code">you can use arbitrary tag attributes
+  wrap('foo','&lt;bar x=&quot;1&quot; y=&quot;2&quot;&gt;') =&gt; &quot;&lt;bar x=1 y=2&gt;foo&lt;/bar&gt;&quot;</pre>
+    
+  </div>
+<h3>Parameters:</h3>
+<ul class="param">
+  
+    <li>
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+        <span class='name'>text</span>
+      
+      
+      
+        &mdash;
+        
+to be wrapped
 
-	<div id="validator-badges">
-		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
-		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
-			Rdoc Generator</a> 1.1.6</small>.</p>
-	</div>
 
-</body>
+      
+    </li>
+  
+    <li>
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+        <span class='name'>tag</span>
+      
+      
+      
+        &mdash;
+        
+to use as wrapper
+
+
+      
+    </li>
+  
+</ul>
+<h3>Returns:</h3>
+<ul class="return">
+  
+    <li>
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+      
+        &mdash;
+        
+text wrapped in a tag pair.
+
+
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+31
+32
+33
+34
+35
+36
+37
+38</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/webget_ruby_html/misc.rb', line 31</span>
+
+<span class='kw'>def</span> <span class='id wrap'>wrap</span><span class='lparen'>(</span><span class='id text'>text</span><span class='comma'>,</span><span class='id tag'>tag</span><span class='rparen'>)</span>
+  <span class='id t'>t</span><span class='op'>=</span><span class='id tag'>tag</span>
+  <span class='id t'>t</span><span class='period'>.</span><span class='id sub!'>sub!</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^&lt;</span><span class='regexp_end'>/</span></span><span class='comma'>,</span><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_end'>'</span></span><span class='rparen'>)</span>
+  <span class='id t'>t</span><span class='period'>.</span><span class='id sub!'>sub!</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>&gt;$</span><span class='regexp_end'>/</span></span><span class='comma'>,</span><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_end'>'</span></span><span class='rparen'>)</span>
+  <span class='id open'>open</span><span class='op'>=</span><span class='id t'>t</span>
+  <span class='id shut'>shut</span><span class='op'>=</span><span class='id t'>t</span><span class='period'>.</span><span class='id split'>split</span><span class='period'>.</span><span class='id first'>first</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>&lt;</span><span class='embexpr_beg'>#{</span><span class='id open'>open</span><span class='rbrace'>}</span><span class='tstring_content'>&gt;</span><span class='embexpr_beg'>#{</span><span class='id text'>text</span><span class='rbrace'>}</span><span class='tstring_content'>&lt;/</span><span class='embexpr_beg'>#{</span><span class='id shut'>shut</span><span class='rbrace'>}</span><span class='tstring_content'>&gt;</span><span class='tstring_end'>&quot;</span></span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+    
+    <div id="footer">
+  Generated on Tue Mar 23 10:58:43 2010 by 
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool">yard</a>
+  0.5.3 (ruby-1.9.1).
+</div>
+
+  </body>
 </html>
-

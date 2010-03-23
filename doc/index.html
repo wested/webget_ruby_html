@@ -1,136 +1,202 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
-	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta name="Content-Type" content="text/html; charset=UTF-8" />
+<title>Documentation by YARD 0.5.3</title>
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8" />
+<link rel="stylesheet" href="css/common.css" type="text/css" media="screen" charset="utf-8" />
 
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
-<head>
-	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<script type="text/javascript" charset="utf-8">
+  relpath = '';
+  if (relpath != '') relpath += '/';
+</script>
+<script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/app.js"></script>
 
-	<title>webget_ruby_html</title>
+<link rel="stylesheet" href="css/pygments.css" type="text/css" media="screen" charset="utf-8" />
 
-	<link type="text/css" media="screen" href="rdoc.css" rel="stylesheet" />
+  </head>
+  <body>
+    <script type="text/javascript" charset="utf-8">
+      if (window.top.frames.main) document.body.className = 'frames';
+    </script>
+    
+    <div id="header">
+      <div id="menu">
+  
+    <a href="_index.html" title="Index">Index</a> &raquo; 
+    <span class="title">File: README</span>
+  
+  
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
 
-	<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
-	<script src="js/thickbox-compressed.js" type="text/javascript" charset="utf-8"></script>
-	<script src="js/quicksearch.js" type="text/javascript" charset="utf-8"></script>
-	<script src="js/darkfish.js" type="text/javascript" charset="utf-8"></script>
+      <div id="search">
+  <a id="class_list_link" href="#">Class List</a>
+  <a id="method_list_link" href="#">Method List</a>
+  <a id ="file_list_link" href="#">File List</a>
+</div>
 
-</head>
-<body class="indexpage">
+      <div class="clear"></div>
+    </div>
+    
+    <iframe id="search_frame"></iframe>
+    
+    <div id="content"><div id='filecontents'><h1>WebGet Ruby Gem: HTML helpers for tables, lists, etc.</h1>
+<table>
+<tr><td valign="top">Author:</td><td>Joel Parker Henderson, joelparkerhenderson@gmail.com
 
-	
-	<h1>webget_ruby_html</h1>
+</td></tr>
+<tr><td valign="top">Copyright:</td><td>Copyright &#169; 2006-2010 Joel Parker Henderson
 
-	
-	<p>This is the API documentation for 'webget_ruby_html'.</p>
-	
+</td></tr>
+<tr><td valign="top">License:</td><td>CreativeCommons License, Non-commercial Share Alike
 
-	
-	
-	<h2>Files</h2>
-	<ul>
-		
-			<li class="file"><a href="LICENSE_txt.html">LICENSE.txt</a></li>
-		
-			<li class="file"><a href="README_rdoc.html">README.rdoc</a></li>
-		
-			<li class="file"><a href="webget_ruby_html_gemspec.html">webget_ruby_html.gemspec</a></li>
-		
-			<li class="file"><a href="webget_ruby_html_sha512_txt.html">webget_ruby_html.sha512.txt</a></li>
-		
-	</ul>
-	
+</td></tr>
+<tr><td valign="top">License:</td><td>LGPL, GNU Lesser General Public License
 
-	<h2>Classes/Modules</h2>
-	<ul>
-		
-		<li class="module"><a href="HTML.html">HTML</a></li>
-		
-		<li class="class"><a href="Testing.html">Testing</a></li>
-		
-	</ul>
+</td></tr>
+</table>
+<h2>Table Methods</h2>
+<ul>
+<li>table - Builds an HTML table from the supplied parameters: string CSS: ID,
+Class; array of strings: Headers, Footers; array of array of string: Rows
 
-	<h2>Methods</h2>
-	<ul>
-		
-			<li><a href="HTML.html#M000035">#attrs_to_string &mdash; HTML</a></li>
-		
-			<li><a href="HTML.html#M000000">#comment &mdash; HTML</a></li>
-		
-			<li><a href="HTML.html#M000033">#li &mdash; HTML</a></li>
-		
-			<li><a href="HTML.html#M000034">#lis &mdash; HTML</a></li>
-		
-			<li><a href="HTML.html#M000005">#table &mdash; HTML</a></li>
-		
-			<li><a href="HTML.html#M000010">#tables &mdash; HTML</a></li>
-		
-			<li><a href="HTML.html#M000024">#tbody &mdash; HTML</a></li>
-		
-			<li><a href="HTML.html#M000028">#td &mdash; HTML</a></li>
-		
-			<li><a href="HTML.html#M000029">#tds &mdash; HTML</a></li>
-		
-			<li><a href="Testing.html#M000002">#test_comment &mdash; Testing</a></li>
-		
-			<li><a href="Testing.html#M000004">#test_li &mdash; Testing</a></li>
-		
-			<li><a href="Testing.html#M000006">#test_lis &mdash; Testing</a></li>
-		
-			<li><a href="Testing.html#M000025">#test_table_headers_body_footers &mdash; Testing</a></li>
-		
-			<li><a href="Testing.html#M000020">#test_table_text &mdash; Testing</a></li>
-		
-			<li><a href="Testing.html#M000021">#test_table_text_and_attrs &mdash; Testing</a></li>
-		
-			<li><a href="Testing.html#M000022">#test_tables &mdash; Testing</a></li>
-		
-			<li><a href="Testing.html#M000014">#test_tbody &mdash; Testing</a></li>
-		
-			<li><a href="Testing.html#M000009">#test_td &mdash; Testing</a></li>
-		
-			<li><a href="Testing.html#M000011">#test_tds &mdash; Testing</a></li>
-		
-			<li><a href="Testing.html#M000019">#test_tfoot &mdash; Testing</a></li>
-		
-			<li><a href="Testing.html#M000018">#test_thead &mdash; Testing</a></li>
-		
-			<li><a href="Testing.html#M000017">#test_ths &mdash; Testing</a></li>
-		
-			<li><a href="Testing.html#M000012">#test_tr &mdash; Testing</a></li>
-		
-			<li><a href="Testing.html#M000013">#test_trs &mdash; Testing</a></li>
-		
-			<li><a href="Testing.html#M000007">#test_ul &mdash; Testing</a></li>
-		
-			<li><a href="Testing.html#M000008">#test_uls &mdash; Testing</a></li>
-		
-			<li><a href="Testing.html#M000003">#test_wrap &mdash; Testing</a></li>
-		
-			<li><a href="HTML.html#M000030">#tfoot &mdash; HTML</a></li>
-		
-			<li><a href="HTML.html#M000016">#th &mdash; HTML</a></li>
-		
-			<li><a href="HTML.html#M000015">#thead &mdash; HTML</a></li>
-		
-			<li><a href="HTML.html#M000023">#ths &mdash; HTML</a></li>
-		
-			<li><a href="HTML.html#M000026">#tr &mdash; HTML</a></li>
-		
-			<li><a href="HTML.html#M000027">#trs &mdash; HTML</a></li>
-		
-			<li><a href="HTML.html#M000031">#ul &mdash; HTML</a></li>
-		
-			<li><a href="HTML.html#M000032">#uls &mdash; HTML</a></li>
-		
-			<li><a href="HTML.html#M000001">#wrap &mdash; HTML</a></li>
-		
-	</ul>
+</li>
+<li>tables - Builds one or more HTML tables from a supplied array of arrays
+(each sub-array holding the params specified for the table method)
 
-	<div id="validator-badges">
-		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
-		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
-			Rdoc Generator</a> 1.1.6</small>.</p>
-	</div>
-</body>
+</li>
+<li>thead - Builds the thead section of a table from an array of strings
+
+</li>
+<li>th - Returns a TH table cell
+
+</li>
+<li>ths - Returns a string of TH table cells
+
+</li>
+<li>tbody - Builds the tbody section of a table from an array of arrays of
+strings (each sub-array becomes a table row)
+
+</li>
+<li>tr - Returns a TR table row
+
+</li>
+<li>trs - Returns a string of TR table rows
+
+</li>
+<li>td - Returns a TD table cell
+
+</li>
+<li>tds - Returns a string of TD table cells
+
+</li>
+<li>tfoot - Builds the tfoot section of a table from an array of strings
+
+</li>
+</ul>
+<p>
+Examples:
+</p>
+<pre class="code">
+  headers = ['a','b','c']
+  footers = ['x','y','z']
+  rows=[['d','e,'f']]
+  table(:id=&gt;'foo', :class=&gt;'bar', :headers=&gt;headers, :footers=&gt;footers, :rows=&gt;rows)
+  =&gt;
+  &lt;table id=&quot;foo&quot; class=&quot;bar&quot;&gt;
+  &lt;thead&gt;
+  &lt;tr&gt;
+  &lt;th&gt;a&lt;/th&gt;
+  &lt;th&gt;b&lt;/th&gt;
+  &lt;th&gt;c&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;tr&gt;
+  &lt;td&gt;d&lt;/td&gt;
+  &lt;td&gt;e&lt;/td&gt;
+  &lt;td&gt;f&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tfoot&gt;
+  &lt;tr&gt;
+  &lt;th&gt;x&lt;/th&gt;
+  &lt;th&gt;y&lt;/th&gt;
+  &lt;th&gt;z&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;/tfoot&gt;
+  &lt;/table&gt;
+</pre>
+<h2>List Methods</h2>
+<ul>
+<li>ul - Builds an HTML unordered list from an array of strings or Enumerables
+
+</li>
+<li>uls - Builds one or more HTML unordered lists from an array of arrays of
+strings or Enumerables (sub-arrays can be a mix of both)
+
+</li>
+<li>li - Returns an LI item
+
+</li>
+<li>lis - Returns a string of LI items
+
+</li>
+</ul>
+<p>
+Examples:
+</p>
+<pre class="code">
+  ul(['a','b','c']) =&gt;
+  &lt;ul&gt;&lt;li&gt;a&lt;/li&gt;&lt;li&gt;b&lt;/li&gt;&lt;li&gt;c&lt;/li&gt;&lt;/ul&gt;
+
+  uls(['a','b','c'],['d','e','f'],[1,2,3]) =&gt;
+  &lt;ul&gt;&lt;li&gt;a&lt;/li&gt;&lt;li&gt;b&lt;/li&gt;&lt;li&gt;c&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;d&lt;/li&gt;&lt;li&gt;e&lt;/li&gt;&lt;li&gt;f&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;1&lt;/li&gt;&lt;li&gt;2&lt;/li&gt;&lt;li&gt;3&lt;/li&gt;&lt;/ul&gt;
+</pre>
+<h2>Misc Methods</h2>
+<ul>
+<li>comment - Return the text parameter wrapped in an HTML comment
+
+</li>
+<li>wrap - Return the text parameter wrapped in a tag pair
+
+</li>
+</ul>
+<p>
+Examples:
+</p>
+<pre class="code">
+  comment('the following comes from') =&gt;
+  &lt;!-- the following comes from --&gt;
+
+  wrap('foo', 'bar') =&gt;
+  &lt;bar&gt;foo&lt;/bar&gt;
+</pre>
+<h2>Changes</h2>
+<ul>
+<li>1.0.6 add to gemcutter
+
+</li>
+<li>1.0.5 comment &amp; wrap
+
+</li>
+<li>1.0.4 tables
+
+</li>
+<li>1.0.0 lists
+
+</li>
+</ul>
+</div></div>
+    
+    <div id="footer">
+  Generated on Tue Mar 23 10:58:43 2010 by 
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool">yard</a>
+  0.5.3 (ruby-1.9.1).
+</div>
+
+  </body>
 </html>
